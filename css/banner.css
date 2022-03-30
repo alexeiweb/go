@@ -1,0 +1,46 @@
+.banner {
+  height: 942px;
+  padding-top: 100px;
+}
+
+
+.banner__title {
+  position: relative;
+  font-weight: 900;
+  font-size: 200px;
+  letter-spacing: -0.1em;
+  line-height: 100%;
+  z-index: 2;
+}
+
+.banner__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+  position: relative;
+  z-index: 1
+}
+
+.banner__subtitle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/stroke.svg") top left repeat-y;
+  width: 1172px;
+  height: 700px;
+  z-index: 1;
+  top: -15px;
+  left: 0;
+}
+
+.banner__subtitle:before {
+  content: "";
+  position: absolute;
+  background: url("../img/hero.png") top left no-repeat;
+  width: 675px;
+  height: 762px;
+  z-index: 2;
+  display: block;
+  right: 0;
+  top: -100px;
+}

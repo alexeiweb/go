@@ -1,0 +1,44 @@
+.halls {
+  padding-top: 100px;
+}
+
+.halls__item {
+  display: inline-block;
+  width: 580px;
+  height: 349px; 
+  background-size: contain;
+  margin-bottom: 20px;  
+}
+
+.halls__item:nth-child(even) {
+  margin-right: 14px;
+}
+
+.halls__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.halls__item_title {
+  width: 250px;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+
+.hall-vibes {
+  background-image: url(../img/1.jpg);
+}
+
+.hall-wars {
+  background-image: url(../img/2.jpg);
+}
+
+.hall-west {
+  background-image: url(../img/3.jpg);
+}
+
+.hall-neon {
+  background-image: url(../img/4.jpg);
+}

@@ -1,0 +1,26 @@
+.feedback__wrapper {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.last-wrapper {
+  margin-bottom: 0;
+}
+
+.feedback__image {
+  float: none;
+  margin-bottom: 7px;
+}
+
+.feedback__image_desc {
+  text-align: center;
+}
+
+.feedback__text {
+  line-height: 28px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 680px;
+  padding-top: 75px;
+}
+
