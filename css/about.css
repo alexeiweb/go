@@ -1,5 +1,8 @@
+.about__content {
+  display: flex;
+}
+
 .about__content_left {
-  display: inline-block;
   width: 600px;  
 }
 
