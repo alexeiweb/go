@@ -1,0 +1,50 @@
+.booking {
+  background-color: #440F51;
+}
+
+.booking__block_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.booking__block_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__title {
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+
+.booking__block_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking__radios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__radio {
+  width: 250px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 7px 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.booking__date {
+  width: 134px;
+  height: 52px;
+}

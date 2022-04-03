@@ -1,44 +1,45 @@
-.halls {
-  padding-top: 100px;
+.halls__title {
+  margin-bottom: 41px;
 }
 
-.halls__item {
-  display: inline-block;
-  width: 580px;
-  height: 349px; 
-  background-size: contain;
-  margin-bottom: 20px;  
+.halls__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.halls__item:nth-child(even) {
-  margin-right: 14px;
+.halls__card {
+  margin-bottom: 50px;
 }
 
-.halls__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-}
-
-.halls__item_title {
-  width: 250px;
+.halls__card_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  font-weight: 700;
   font-size: 70px;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 80px;
+  text-transform: uppercase;  
+  color: #FFFFFF;
+  width: 580px;
+  height: 349px;
   margin: 0 auto;
-  padding: 94px 0;
 }
 
 .hall-vibes {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/hall-1.jpg);
+  
 }
 
 .hall-wars {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/hall-2.jpg);
 }
 
 .hall-west {
-  background-image: url(../img/3.jpg);
+  background-image: url(../img/hall-3.jpg);
 }
 
 .hall-neon {
-  background-image: url(../img/4.jpg);
+  background-image: url(../img/hall-4.jpg);  
 }

@@ -4,61 +4,274 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAME OVER - Новый формат игр для отдыха</title>
+  <title>GAME OVER - Новый формат игр и отдыха</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
-  <main class="main">
-    <section class="banner">
-      <div class="container">
-        <h1 class="banner__title">GAME OVER</h1>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип Game Over">
 
-        <p class="banner__subtitle">Новый формат игр и отдыха</p>        
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#halls">Залы</a>
+          </li>
+    
+          <li class="header__item">
+            <a class="header__link" href="#about">О нас</a>
+          </li>
+    
+          <li class="header__item">
+            <a class="header__link" href="#booking">Бронь</a>
+          </li>
+    
+          <li class="header__item">
+            <a class="header__link" href="#feedback">Отзывы</a>
+          </li>
+    
+          <li class="header__item">
+            <a class="header__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <button class="header__btn" type="submit">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">GAME OVER</h1>
+
+        <p class="hero__subtitle">Новый формат игр и отдыха</p>
+
+        <div class="hero__blocks">
+          <div class="hero__block">
+            <p class="hero__block_title">4</p>
+  
+            <p class="hero__block_desc">Тематических зала</p>
+          </div>
+  
+          <div class="hero__block">
+            <p class="hero__block_title new">new</p>
+  
+            <p class="hero__block_desc">Новейшая аппаратура</p>
+          </div>
+        </div>
+
+        <button class="hero__btn" type="submit">Забронировать</button>        
       </div>
     </section>
 
-    <section class="halls">
+    <section class="release">
+      <div class="container">
+        <h2 class="release__title title">У нас есть все для классного<br>
+          отдыха с друзьями!</h2>
+  
+        <div class="release__cards">
+          <div class="release__card">
+            <p class="release__card_desc card-vr">VR очки</p>
+          </div>
+  
+          <div class="release__card">                        
+            <p class="release__card_desc card-audio">Аудио-система 5.1<br>
+              с отличным звуком</p>
+          </div>
+  
+          <div class="release__card">            
+            <p class="release__card_desc card-karaoke">Караоке (4 микрофона)</p>
+          </div>
+  
+          <div class="release__card">            
+            <p class="release__card_desc card-games">Настольные игры</p>
+          </div>
+  
+          <div class="release__card">            
+            <p class="release__card_desc card-films">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+          </div>
+  
+          <div class="release__card">
+            
+            <p class="release__card_desc card-playstation">РlаyStаtiоn 5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="halls" id="halls">
       <div class="container">
         <h2 class="halls__title title">наши залы</h2>
 
-        <div class="halls__item hall-vibes">
-          <h3 class="halls__item_title">80’s vibes</h3>
-        </div>
-
-        <div class="halls__item hall-wars">
-          <h3 class="halls__item_title">Star wars</h3>
-        </div>
-
-        <div class="halls__item hall-west">
-          <h3 class="halls__item_title">wild west</h3>
-        </div>
-
-        <div class="halls__item hall-neon">
-          <h3 class="halls__item_title">neon style</h3>
-        </div>
+        <div class="halls__cards">
+          <div class="halls__card hall-vibes">
+            <h3 class="halls__card_title">80’s vibes</h3>
+          </div>
+  
+          <div class="halls__card hall-wars">
+            <h3 class="halls__card_title">Star wars</h3>
+          </div>
+  
+          <div class="halls__card hall-west">
+            <h3 class="halls__card_title">wild west</h3>
+          </div>
+  
+          <div class="halls__card hall-neon">
+            <h3 class="halls__card_title">neon style</h3>
+          </div>
+        </div>        
       </div>
     </section>
 
-    <section class="about">
+    <section class="booking" id="booking">
+      <div class="container">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <h2 class="booking__title title">Забронировать зал просто</h2>
+  
+          <div class="booking__block">
+            <h3 class="booking__block_title">Выбери зал</h3>
+            <div class="booking__radios">
+              <label class="booking__radio">
+                <input type="radio" name="hall" value="80's vibes" style="display: none;">80's vibes
+              </label>
+    
+              <label class="booking__radio">
+                <input type="radio" name="hall" value="Star wars" style="display: none;">Star wars
+              </label>
+    
+              <label class="booking__radio">
+                <input type="radio" name="hall" value="Wild west" style="display: none;">Wild west
+              </label>
+    
+              <label class="booking__radio">
+                <input type="radio" name="hall" value="Neon style" style="display: none;">Neon style
+              </label>
+            </div>
+          </div>
+          
+          <div class="booking__block">
+            <h3 class="booking__block_title">Собери набор развлечений</h3>
+            <div class="booking__block_list">
+              <div class="booking__block_item">
+                <h3 class="block__title">Приставка:</h3>
+    
+                <label>
+                  <input type="radio" name="console" value="Play Station" class="block__radio">Play Station
+                </label>
+    
+                <label>
+                  <input type="radio" name="console" value="Sega Mega Drive" class="block__radio">Sega Mega Drive
+                </label>
+    
+                <label>
+                  <input type="radio" name="console" value="X-box One S" class="block__radio">X-box One S
+                </label>
+    
+                <label>
+                  <input type="radio" name="console" value="Dendy" class="block__radio">Dendy
+                </label>
+              </div>
+    
+              <div class="booking__block_item">
+                <h3 class="block__title">Настольные игры</h3>
+    
+                <label>
+                  <input type="checkbox" name="game" value="Jenga">Jenga
+                </label>
+    
+                <label>
+                  <input type="checkbox" name="game" value="Monopoly">Monopoly
+                </label>
+    
+                <label>
+                  <input type="checkbox" name="game" value="Manchkin">Манчкин
+                </label>
+    
+                <label>
+                  <input type="checkbox" name="game" value="Alias">Alias
+                </label>
+              </div>
+    
+              <div class="booking__block_item">
+                <h3 class="block__title">Дополнительно</h3>
+    
+                <label>
+                  <input type="checkbox" name="further" value="Karaoke">Караоке
+                </label>
+    
+                <label>
+                  <input type="checkbox" name="further" value="VR">VR
+                </label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="booking__block">
+            <h3 class="booking__block_title">Выбери дату и время</h3>
+  
+            <label>
+              <input class="booking__date" type="date" name="date" required="">
+            </label>
+  
+            <label class="booking__time">
+              <input class="booking__date" type="time" name="time" required="">
+            </label>
+  
+            <select name="number">
+              <option value="">Сколько человек</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+            </select>
+  
+            <label>
+              <input type="text" name="name" required="">
+            </label>
+  
+            <label>
+              <input type="text" name="second name" required="">
+            </label>
+  
+            <label>
+              <input type="tel" name="phone" required="">
+            </label>
+  
+            <label>
+              <input type="mailto" name="email" required="">
+            </label>
+  
+            <button type="submit">Забронировать</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title">о нас</h2>
 
         <div class="about__content">
           <div class="about__content_left">
-            <img class="about__content_image" src="img/about1.jpg" width="300" height="206" alt="">
+            <img class="about__content_image" src="img/about-1.jpg" width="300" height="206" alt="">
 
-            <img class="about__content_image" src="img/about2.jpg" width="300" height="206" alt="">
+            <img class="about__content_image" src="img/about-2.jpg" width="300" height="206" alt="">
 
-            <img class="about__content_image" src="img/about3.jpg" width="164" height="224" alt="">
+            <img class="about__content_image" src="img/about-3.jpg" width="164" height="224" alt="">
 
-            <img class="about__content_image" src="img/about4.jpg" width="180" height="224" alt="">
+            <img class="about__content_image" src="img/about-4.jpg" width="180" height="224" alt="">
 
-            <img class="about__content_image" src="img/about5.jpg" width="256" height="224" alt="">
+            <img class="about__content_image" src="img/about-5.jpg" width="256" height="224" alt="">
 
-            <img class="about__content_image" src="img/about6.jpg" width="380" height="166" alt="">
+            <img class="about__content_image" src="img/about-6.jpg" width="380" height="166" alt="">
 
-            <img class="about__content_image" src="img/about7.jpg" width="220" height="166" alt="">
+            <img class="about__content_image" src="img/about-7.jpg" width="220" height="166" alt="">
 
           </div>
           <div class="about__content_right">
@@ -87,13 +300,14 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__container container">
         <h1 class="feedback__title title">Отзывы посетителей</h1>
+
         <ul>
           <li>
             <figure class="feedback__wrapper">
-              <img class="feedback__image" src="img/feedback1.png" alt="" height="280">
+              <img class="feedback__image" src="img/feedback-1.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Макс Самойлов</figcaption>          
             </figure>
@@ -105,7 +319,7 @@
 
           <li>
             <figure class="feedback__wrapper">
-              <img class="feedback__image" src="img/feedback2.png" alt="" height="280">
+              <img class="feedback__image" src="img/feedback-2.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Оксана Григорьева</figcaption>          
             </figure>
@@ -117,7 +331,7 @@
 
           <li>
             <figure class="feedback__wrapper last-wrapper">
-              <img class="feedback__image" src="img/feedback3.png" alt="" height="280">
+              <img class="feedback__image" src="img/feedback-3.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Никита Ященко</figcaption>          
             </figure>
@@ -156,11 +370,11 @@
           </li>
         </ul>
       </div>
-    </section>    
+    </section>
   </main>
 
   <footer class="footer">
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="contacts__title title">контакты</h2>
   
@@ -209,6 +423,6 @@
         </ul>        
       </div>
     </section>
-  </footer>
+  </footer>  
 </body>
 </html>
