@@ -74,7 +74,7 @@
 	width: 27px;
 	height: 27px;
 	border-radius: 50%;
-	background: #FFF;
+	background: #fff;
 }
 
 .booking__radio_text:after {
@@ -122,7 +122,7 @@
 	width: 25px;
 	height: 25px;
 	background: #fff;
-	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
 	transition: .2s;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .booking__checkbox input:focus + .booking__checkbox_text:before {
-	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px hsla(288, 69%, 10%, 1);
+	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 3px hsla(288, 69%, 10%, 1);
 }
 
 .booking__date_wrapper {
@@ -222,13 +222,41 @@
   line-height: 20px;
 }
 
-.booking__date_input:before {
+.booking__date_name,
+.booking__date_second-name,
+.booking__date_phone,
+.booking__date_email {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.booking__date_name:before {
   content: "Имя";
   position: absolute;
-	left: 4px;
-  top: 2px;
-  width: 10px;
-  height: 10px;
+  left: 0;
+  top: -17px;
+}
+
+.booking__date_second-name:before {
+  content: "Фамилия";
+  position: absolute;
+  left: 0;
+  top: -17px;
+}
+
+.booking__date_phone:before {
+  content: "Телефон";
+  position: absolute;
+  left: 0;
+  top: -17px;
+}
+
+.booking__date_email:before {
+  content: "E-mail";
+  position: absolute;
+  left: 0;
+  top: -17px;
 }
 
 .booking__btn {
