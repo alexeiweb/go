@@ -152,10 +152,48 @@
 	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px hsla(288, 69%, 10%, 1);
 }
 
+.booking__date_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.booking__date_block {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.booking__date_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+::-webkit-datetime-edit { padding: 12px 20px; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background-image: url('../img/triangle.svg'); }
+
+/* 
+::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: orange; } */
+
+
 .booking__date_item,
 .booking__time_item {
   width: 134px;
   height: 52px;
+  border: none;
 }
 
 .booking__number {
@@ -165,9 +203,15 @@
   line-height: 28px;
   color: hsl(0, 5%, 12%);
   padding-left: 20px;
+	appearance: none;
+	background-image: url('../img/triangle.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 47px 12px;
 }
 
 .booking__btn {
+  display: flex;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -176,4 +220,5 @@
   border-radius: 10px;
   color: hsl(288, 97%, 27%);
   padding: 15px 60px;
+  margin-left: auto;
 }

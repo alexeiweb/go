@@ -239,39 +239,49 @@
           <div class="booking__date">
             <h3 class="booking__date_title block-title">Выбери дату и время</h3>
   
-            <label>
-              <input class="booking__date_item" type="date" name="date" required="">
-            </label>
-  
-            <label class="booking__time_item">
-              <input type="time" name="time" required="">
-            </label>
-  
-            <select class="booking__number" name="number">
-              <option value="">Сколько человек</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-            </select>
-  
-            <label>
-              <input type="text" name="name" required="">
-            </label>
-  
-            <label>
-              <input type="text" name="second name" required="">
-            </label>
-  
-            <label>
-              <input type="tel" name="phone" required="">
-            </label>
-  
-            <label>
-              <input type="mailto" name="email" required="">
-            </label>
+            <div class="booking__date_wrapper">
+              <div class="booking__date_block">
+                <div class="booking__date_list">
+                  <label>
+                    <input class="booking__date_item" type="date" name="date" required>
+                  </label>
+        
+                  <label>
+                    <input class="booking__time_item" type="time" name="time" required>
+                  </label>
+                </div>
+      
+                <select class="booking__number" name="number">
+                  <option value="">Сколько человек</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                </select>
+              </div>
+    
+              <div class="booking__date_block">
+                <label>Имя
+                  <input type="text" name="name" required="">
+                </label>
+      
+                <label>Фамилия
+                  <input type="text" name="second name" required="">
+                </label>
+              </div>
+    
+              <div class="booking__date_block">
+                <label>Телефон
+                  <input type="tel" name="phone" required="">
+                </label>
+      
+                <label>E-mail
+                  <input type="mailto" name="email" required="">
+                </label>
+              </div>
+            </div>
   
             <button class="booking__btn" type="submit">Забронировать</button>
           </div>
