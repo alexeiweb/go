@@ -58,7 +58,7 @@
 .hero__block_title {
   font-weight: 900;
   font-size: 100px;
-  color: #CD06FF;
+  color: hsl(288, 100%, 51%);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -80,9 +80,10 @@ font-variant: small-caps;
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFF;
+  color: hsl(0, 0%, 100%);
   padding: 25px 69px;
-  background-color: #6C0287;
+  background-color: hsl(288, 97%, 27%);
   border: none;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px hsla(288, 97%, 27%, 0.6);
 }

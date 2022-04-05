@@ -3,6 +3,17 @@
   padding-bottom: 100px;
 }
 
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
 .contacts__address {
   margin-bottom: 36px;
 }
@@ -39,4 +50,14 @@
 
 .contacts__item:last-child {
   margin-right: 0;
+}
+
+.contacts__map {
+  margin-bottom: 148px;
+}
+
+.contacts__copyright {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -3,15 +3,16 @@
 }
 
 .about__content_left {
-  width: 600px;  
+  display: flex;
+  flex-wrap: wrap;
+  /* max-height: 596px; */
 }
 
 .about__content_right {
-  display: inline-block;
-  vertical-align: top;
-  width: 574px;
+  display: flex;
+  flex-direction: column;
   line-height: 28px;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .about__desc {
@@ -61,7 +62,7 @@
 }
 
 .about__founder {
-  padding-left: 110px;
+  padding-left: 90px;
 }
 
 .about__founder_image {

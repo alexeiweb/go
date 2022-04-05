@@ -1,34 +1,19 @@
 .booking {
-  background-color: #440F51;
+  background-color: hsl(288, 69%, 19%);
 }
 
-.booking__block_list {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 100px;
-}
-
-.booking__block_item {
-  display: flex;
-  flex-direction: column;
-}
-
-.booking__title {
-  padding-top: 50px;
-  margin-bottom: 40px;
-}
-
-.booking__block_title {
+.block-title {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.booking__radios {
+.booking__hall_radios {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
-.booking__radio {
+.booking__hall_radio {
   width: 250px;
   height: 55px;
   font-weight: 700;
@@ -36,16 +21,139 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #fff;
+  color: hsl(0, 0%, 0%);;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   padding: 7px 0;
   cursor: pointer;
-  margin-bottom: 10px;
 }
 
-.booking__date,
-.booking__time {
+.booking__entertainments_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 60px;
+}
+
+.booking__entertainments_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__entertainments_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking__entertainments_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+
+/* Radio кнопки */
+
+.booking__radio input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+
+.booking__radio_text {
+	position: relative;
+	padding: 0 0 0 39px;
+	cursor: pointer;
+}
+
+.booking__radio_text:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	background: #FFF;
+}
+
+.booking__radio_text:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: hsl(288, 69%, 10%);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	opacity: 0;
+	transition: .2s;
+}
+
+.booking__radio input:checked + .booking__radio_text:after {
+	opacity: 1;
+}
+
+.booking__radio input:focus + .booking__radio_text:before {
+	box-shadow: 0 0 0 3px hsla(288, 69%, 10%, 0.7);
+}
+
+/* Checkbox */
+
+.booking__checkbox input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.booking__checkbox_text {
+	position: relative;
+	padding: 0 0 0 39px;
+	cursor: pointer;
+}
+
+.booking__checkbox_text:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+
+.booking__checkbox_text:after {
+	content: '';
+	position: absolute;
+	left: 4px;
+  top: 2px;
+  width: 17px;
+  height: 10px;
+  border-radius: 1px;
+  border-left: 4px solid #440F51;
+  border-bottom: 4px solid #440F51;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.booking__checkbox input:checked + .booking__checkbox_text:before {
+	background: #eccbf4;
+}
+
+.booking__checkbox input:checked + .booking__checkbox_text:after {
+	opacity: 1;
+}
+
+.booking__checkbox input:focus + .booking__checkbox_text:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px hsla(288, 69%, 10%, 1);
+}
+
+.booking__date_item,
+.booking__time_item {
   width: 134px;
   height: 52px;
 }
@@ -55,7 +163,7 @@
   height: 52px;
   font-size: 18px;
   line-height: 28px;
-  color: #211E1E;
+  color: hsl(0, 5%, 12%);
   padding-left: 20px;
 }
 
@@ -64,8 +172,8 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  background-color: #FFF;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  color: #6C0287;
+  color: hsl(288, 97%, 27%);
   padding: 15px 60px;
 }

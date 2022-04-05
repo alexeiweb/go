@@ -132,93 +132,119 @@
         <form action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="booking__title title">Забронировать зал просто</h2>
   
-          <div class="booking__block">
-            <h3 class="booking__block_title">Выбери зал</h3>
-            <div class="booking__radios">
-              <label class="booking__radio">
+          <div class="booking__hall">
+            <h3 class="booking__hall_title block-title">Выбери зал</h3>
+            <div class="booking__hall_radios">
+              <label class="booking__hall_radio">
                 <input type="radio" name="hall" value="80's vibes" style="display: none;">80's vibes
               </label>
     
-              <label class="booking__radio">
+              <label class="booking__hall_radio">
                 <input type="radio" name="hall" value="Star wars" style="display: none;">Star wars
               </label>
     
-              <label class="booking__radio">
+              <label class="booking__hall_radio">
                 <input type="radio" name="hall" value="Wild west" style="display: none;">Wild west
               </label>
     
-              <label class="booking__radio">
+              <label class="booking__hall_radio">
                 <input type="radio" name="hall" value="Neon style" style="display: none;">Neon style
               </label>
             </div>
           </div>
           
-          <div class="booking__block">
-            <h3 class="booking__block_title">Собери набор развлечений</h3>
-            <div class="booking__block_list">
-              <div class="booking__block_item">
-                <h3 class="block__title">Приставка:</h3>
+          <div class="booking__entertaiments">
+            <h3 class="booking__entertainments_title block-title">Собери набор развлечений</h3>
+            <div class="booking__entertainments_list">
+              <div class="booking__entertainments_item">
+                <h3 class="booking__entertainments_title">Приставка:</h3>
     
-                <label>
-                  <input type="radio" name="console" value="Play Station" class="block__radio">Play Station
-                </label>
-    
-                <label>
-                  <input type="radio" name="console" value="Sega Mega Drive" class="block__radio">Sega Mega Drive
-                </label>
-    
-                <label>
-                  <input type="radio" name="console" value="X-box One S" class="block__radio">X-box One S
-                </label>
-    
-                <label>
-                  <input type="radio" name="console" value="Dendy" class="block__radio">Dendy
-                </label>
+                <div class="booking__entertainments_wrapper">
+                  <label class="booking__radio">
+                    <input type="radio" name="console" value="Play Station">
+  
+                    <p class="booking__radio_text">Play Station</p>
+                  </label>
+      
+                  <label class="booking__radio">
+                    <input type="radio" name="console" value="Sega Mega Drive">
+  
+                    <p class="booking__radio_text">Sega Mega Drive</p>
+                  </label>
+      
+                  <label class="booking__radio">
+                    <input type="radio" name="console" value="X-box One S">
+  
+                    <p class="booking__radio_text">X-box One S</p>
+                  </label>
+      
+                  <label class="booking__radio">
+                    <input type="radio" name="console" value="Dendy">
+  
+                    <p class="booking__radio_text">Dendy</p>
+                  </label>
+                </div>
               </div>
     
-              <div class="booking__block_item">
-                <h3 class="block__title">Настольные игры</h3>
+              <div class="booking__entertainments_item">
+                <h3 class="booking__entertainments_title">Настольные игры</h3>
     
-                <label>
-                  <input type="checkbox" name="game" value="Jenga">Jenga
-                </label>
-    
-                <label>
-                  <input type="checkbox" name="game" value="Monopoly">Monopoly
-                </label>
-    
-                <label>
-                  <input type="checkbox" name="game" value="Manchkin">Манчкин
-                </label>
-    
-                <label>
-                  <input type="checkbox" name="game" value="Alias">Alias
-                </label>
+                <div class="booking__entertainments_wrapper">
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="game" value="Jenga">
+  
+                    <p class="booking__checkbox_text">Jenga</p>
+                  </label>
+      
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="game" value="Monopoly">
+  
+                    <p class="booking__checkbox_text">Monopoly</p>
+                  </label>
+      
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="game" value="Manchkin">
+  
+                    <p class="booking__checkbox_text">Манчкин</p>
+                  </label>
+      
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="game" value="Alias">
+  
+                    <p class="booking__checkbox_text">Alias</p>
+                  </label>
+                </div>
               </div>
     
-              <div class="booking__block_item">
-                <h3 class="block__title">Дополнительно</h3>
+              <div class="booking__entertainments_item">
+                <h3 class="booking__entertainments_title">Дополнительно</h3>
     
-                <label>
-                  <input type="checkbox" name="further" value="Karaoke">Караоке
-                </label>
-    
-                <label>
-                  <input type="checkbox" name="further" value="VR">VR
-                </label>
+                <div class="booking__entertainments_wrapper">
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="further" value="Karaoke">
+  
+                    <p class="booking__checkbox_text">Караоке</p>
+                  </label>
+      
+                  <label class="booking__checkbox">
+                    <input type="checkbox" name="further" value="VR">
+  
+                    <p class="booking__checkbox_text">VR</p>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
   
-          <div class="booking__block">
-            <h3 class="booking__block_title">Выбери дату и время</h3>
+          <div class="booking__date">
+            <h3 class="booking__date_title block-title">Выбери дату и время</h3>
   
             <label>
-              <input class="booking__date" type="date" name="date" required="">
+              <input class="booking__date_item" type="date" name="date" required="">
             </label>
   
-            <label class="booking__time">
-              <input class="booking__date" type="time" name="time" required="">
+            <label class="booking__time_item">
+              <input type="time" name="time" required="">
             </label>
   
             <select class="booking__number" name="number">
@@ -303,10 +329,10 @@
     <section class="feedback" id="feedback">
       <div class="feedback__container container">
         <h1 class="feedback__title title">Отзывы посетителей</h1>
-
-        <ul>
-          <li>
-            <figure class="feedback__wrapper">
+        
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <figure>
               <img class="feedback__image" src="img/feedback-1.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Макс Самойлов</figcaption>          
@@ -317,8 +343,8 @@
             </p>
           </li>
 
-          <li>
-            <figure class="feedback__wrapper">
+          <li class="feedback__item">
+            <figure>
               <img class="feedback__image" src="img/feedback-2.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Оксана Григорьева</figcaption>          
@@ -329,8 +355,8 @@
             </p>
           </li>
 
-          <li>
-            <figure class="feedback__wrapper last-wrapper">
+          <li class="feedback__item">
+            <figure>
               <img class="feedback__image" src="img/feedback-3.png" alt="" height="280">
     
               <figcaption class="feedback__image_desc">Никита Ященко</figcaption>          
@@ -340,7 +366,7 @@
               Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
             </p>       
           </li>
-        </ul>
+        </ul>        
       </div>
     </section>
 
@@ -377,50 +403,64 @@
     <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="contacts__title title">контакты</h2>
-  
-        <div class="contacts__address">
-          <img class="contacts__address_image contact-image" src="img/location.svg" alt="Иконка геолокации">
-  
-          <p class="contacts__address_contact contact">г. Москва<br> ул. Аквамарина, 16</p>
+
+        <div class="contacts__wrapper">
+          <div class="contacts__left">
+            <div class="contacts__address">
+              <img class="contacts__address_image contact-image" src="img/location.svg" alt="Иконка геолокации">
+      
+              <p class="contacts__address_contact contact">г. Москва<br> ул. Аквамарина, 16</p>
+            </div>
+        
+            <p class="contacts__phone">
+              <img class="contacts__phone_image contact-image" src="img/phone.svg" alt="Иконка телефона">
+      
+              <a class="contacts__phone_contact contact" href="tel:898509302893">8 (950) 930-28-93</a>
+            </p>
+        
+            <p class="contacts__email">
+              <img class="contacts__email_image contact-image" src="img/envelope.svg" alt="Иконка конверта">
+      
+              <a class="contacts__email_contact contact" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            </p>
+      
+            <ul class="contacts__social">
+              <li class="contacts__item">
+                <a href="https://instagram.com" class="contacts__item_instagram" target="_blank">
+                  <img src="img/instagram.svg" alt="Иконка Инстаграм">
+                </a>
+              </li>
+      
+              <li class="contacts__item">
+                <a href="https://vk.com" class="contacts__item_vk" target="_blank">
+                  <img src="img/vk.svg" alt="Иконка Инстаграм">
+                </a>
+              </li>
+      
+              <li class="contacts__item">
+                <a href="https://fb.com" class="contacts__item_facebook" target="_blank">
+                  <img src="img/fb.svg" alt="Иконка Инстаграм">
+                </a>
+              </li>
+      
+              <li class="contacts__item">
+                <a href="https://telegram.org" class="contacts__item_telegram" target="_blank">
+                  <img src="img/telegram.svg" alt="Иконка Инстаграм">
+                </a>
+              </li>
+            </ul> 
+          </div>
+          
+          <div class="contacts__map">
+            <img src="img/map.jpg" alt="">
+          </div>
         </div>
-    
-        <p class="contacts__phone">
-          <img class="contacts__phone_image contact-image" src="img/phone.svg" alt="Иконка телефона">
-  
-          <a class="contacts__phone_contact contact" href="tel:898509302893">8 (950) 930-28-93</a>
-        </p>
-    
-        <p class="contacts__email">
-          <img class="contacts__email_image contact-image" src="img/envelope.svg" alt="Иконка конверта">
-  
-          <a class="contacts__email_contact contact" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-        </p>
-  
-        <ul class="contacts__social">
-          <li class="contacts__item">
-            <a href="https://instagram.com" class="contacts__item_instagram" target="_blank">
-              <img src="img/instagram.svg" alt="Иконка Инстаграм">
-            </a>
-          </li>
-  
-          <li class="contacts__item">
-            <a href="https://vk.com" class="contacts__item_vk" target="_blank">
-              <img src="img/vk.svg" alt="Иконка Инстаграм">
-            </a>
-          </li>
-  
-          <li class="contacts__item">
-            <a href="https://fb.com" class="contacts__item_facebook" target="_blank">
-              <img src="img/fb.svg" alt="Иконка Инстаграм">
-            </a>
-          </li>
-  
-          <li class="contacts__item">
-            <a href="https://telegram.org" class="contacts__item_telegram" target="_blank">
-              <img src="img/telegram.svg" alt="Иконка Инстаграм">
-            </a>
-          </li>
-        </ul>        
+
+        <div class="contacts__copyright">
+          <p>© Game Over, 2022</p>
+
+          <p>Design by Anastasia Ilina <br>ilina9825@gmail.com</p>
+        </div>
       </div>
     </section>
   </footer>  
