@@ -156,6 +156,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .booking__date_block {
@@ -169,14 +170,19 @@
   justify-content: space-between;
 }
 
-::-webkit-datetime-edit { padding: 12px 20px; }
-::-webkit-datetime-edit-fields-wrapper { background: silver; }
-::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
-::-webkit-datetime-edit-month-field { color: blue; }
-::-webkit-datetime-edit-day-field { color: green; }
-::-webkit-datetime-edit-year-field { color: purple; }
-::-webkit-inner-spin-button { display: none; }
-::-webkit-calendar-picker-indicator { background-image: url('../img/triangle.svg'); }
+::-webkit-datetime-edit { 
+  padding: 12px 20px; 
+}
+
+::-webkit-inner-spin-button { 
+  display: none; 
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url('../img/triangle.svg');
+  background-position: -40px center;
+	background-size: 47px 12px; 
+}
 
 /* 
 ::-webkit-datetime-edit { padding: 1em; }
@@ -210,6 +216,21 @@
 	background-size: 47px 12px;
 }
 
+.date-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.booking__date_input:before {
+  content: "Имя";
+  position: absolute;
+	left: 4px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+}
+
 .booking__btn {
   display: flex;
   font-weight: 700;
@@ -217,6 +238,7 @@
   line-height: 28px;
   text-transform: uppercase;
   background-color: hsl(0, 0%, 100%);
+  border: none;
   border-radius: 10px;
   color: hsl(288, 97%, 27%);
   padding: 15px 60px;
