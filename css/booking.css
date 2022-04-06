@@ -4,7 +4,7 @@
 
 .block-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .booking__hall_radios {
@@ -26,6 +26,20 @@
   border-radius: 8px;
   padding: 7px 0;
   cursor: pointer;
+}
+
+.booking__hall_radio:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.booking__hall_radio:focus {
+  border: 3px solid #640AA3;
+}
+
+.booking__hall_radio:active {
+  background-color: #EADEED;
+  border: 3px solid #EADEED;
 }
 
 .booking__entertainments_list {
@@ -231,6 +245,30 @@
   font-size: 14px;
 }
 
+.booking__date_name input {
+  width: 280px;
+  height: 52px;
+}
+
+.booking__date_second-name input {
+  width: 280px;
+  height: 52px;
+}
+
+.booking__date_phone input {
+  width: 280px;
+  height: 52px;
+}
+
+.booking__date_email input {
+  width: 280px;
+  height: 52px;
+}
+
+.booking__date_name input:focus {
+  border: 2px solid #CD06FF;
+}
+
 .booking__date_name:before {
   content: "Имя";
   position: absolute;
@@ -266,9 +304,23 @@
   line-height: 28px;
   text-transform: uppercase;
   background-color: hsl(0, 0%, 100%);
-  border: none;
+  border: 3px solid #fff;
   border-radius: 10px;
-  color: hsl(288, 97%, 27%);
+  color: #6C0287;
   padding: 15px 60px;
   margin-left: auto;
+}
+
+.booking__btn:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.booking__btn:focus {
+  border: 3px solid #6C0287;
+}
+
+.booking__btn:active {
+  border: 3px solid #EADEED;
+  background-color: #EADEED;
 }

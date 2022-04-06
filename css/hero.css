@@ -39,6 +39,11 @@
   display: block;
   left: 530px;
   bottom: -550px;
+  cursor: pointer;
+}
+
+.hero__subtitle:after:hover {
+  background: url("../img/down-hover.svg") top left no-repeat;
 }
 
 .hero__blocks {
@@ -82,8 +87,20 @@ font-variant: small-caps;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
   padding: 25px 69px;
-  background-color: hsl(288, 97%, 27%);
+  background-color: #6C0287;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px hsla(288, 97%, 27%, 0.6);
+}
+
+.hero__btn:hover {
+  background-color: #840AA3;
+}
+
+.hero__btn:focus {
+  background-color: #640AA3;
+}
+
+.hero__btn:active {
+  background-color: #640AA3;
 }
