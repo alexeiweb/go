@@ -48,12 +48,6 @@
   margin-right: 26px;  
 }
 
-.contacts__item_instagram {
-  width: 50px;
-  height: 50px;
-  background: url('/img/instagram.svg') no-repeat center;
-}
-
 .contacts__item:last-child {
   margin-right: 0;
 }
