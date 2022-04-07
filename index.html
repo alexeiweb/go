@@ -445,7 +445,7 @@
             <ul class="contacts__social">
               <li class="contacts__item">
                 <a href="https://instagram.com" class="contacts__item_instagram" target="_blank">
-                  <img src="img/instagram.svg" alt="Иконка Инстаграм">
+                  <!-- <img src="img/instagram.svg" alt="Иконка Инстаграм"> -->
                 </a>
               </li>
       
@@ -481,6 +481,14 @@
         </div>
       </div>
     </section>
-  </footer>  
+  </footer> 
+  
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.matches('button')) {
+          event.target.focus()
+      }
+    })
+  </script>
 </body>
 </html>

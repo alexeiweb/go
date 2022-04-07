@@ -27,10 +27,28 @@
   width: 46px;
   height: 46px;
   background-image: url("../img/open-purple.svg");
+  transition: .3s ease-in-out;
+}
+
+.faq__item:hover:after {
+  background-image: url("../img/open-purple-hover.svg");
+}
+
+.faq__item:active:after {
+  background-image: url("../img/close-purple.svg");
 }
 
 .faq__item:nth-child(2n):after {  
   background-image: url("../img/open.svg");
+  transition: .3s ease-in-out;
+}
+
+.faq__item:nth-child(2n):hover:after {
+  background-image: url("../img/open-hover.svg");
+}
+
+.faq__item:nth-child(2n):active:after {
+  background-image: url("../img/close.svg");
 }
 
 .faq__item:last-child {

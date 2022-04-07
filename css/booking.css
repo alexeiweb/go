@@ -26,6 +26,7 @@
   border-radius: 8px;
   padding: 7px 0;
   cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
 .booking__hall_radio:hover {
@@ -78,6 +79,7 @@
 	position: relative;
 	padding: 0 0 0 39px;
 	cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .booking__radio_text:before {
@@ -89,6 +91,10 @@
 	height: 27px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.booking__radio_text:active:before {
+  border: 1px solid #CD06FF;
 }
 
 .booking__radio_text:after {
@@ -110,7 +116,7 @@
 }
 
 .booking__radio input:focus + .booking__radio_text:before {
-	box-shadow: 0 0 0 3px hsla(288, 69%, 10%, 0.7);
+	box-shadow: 0 0 0 3px #CD06FF;  
 }
 
 /* Checkbox */
@@ -137,7 +143,7 @@
 	height: 25px;
 	background: #fff;
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
-	transition: .2s;
+	transition: .3s ease-in-out;
 }
 
 .booking__checkbox_text:after {
@@ -163,7 +169,7 @@
 }
 
 .booking__checkbox input:focus + .booking__checkbox_text:before {
-	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 3px hsla(288, 69%, 10%, 1);
+	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 3px #CD06FF;
 }
 
 .booking__date_wrapper {
@@ -243,11 +249,17 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
+  transition: .3s ease-in-out;
 }
 
 .booking__date_name input {
   width: 280px;
-  height: 52px;
+  height: 52px;  
+}
+
+.booking__date_name:focus input {
+  border: none;
+  border: 3px solid #CD06FF;
 }
 
 .booking__date_second-name input {
@@ -263,10 +275,6 @@
 .booking__date_email input {
   width: 280px;
   height: 52px;
-}
-
-.booking__date_name input:focus {
-  border: 2px solid #CD06FF;
 }
 
 .booking__date_name:before {
@@ -309,6 +317,7 @@
   color: #6C0287;
   padding: 15px 60px;
   margin-left: auto;
+  transition: .3s ease-in-out;
 }
 
 .booking__btn:hover {

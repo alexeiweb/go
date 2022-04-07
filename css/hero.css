@@ -40,10 +40,22 @@
   left: 530px;
   bottom: -550px;
   cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
-.hero__subtitle:after:hover {
-  background: url("../img/down-hover.svg") top left no-repeat;
+.hero__subtitle:hover:after {
+  background: url("../img/down-hover.svg");
+  
+}
+
+.hero__subtitle:focus:after {
+  background: url("../img/down-focus.svg");
+  
+}
+
+.hero__subtitle:active:after {
+  background: url("../img/down-active.svg");
+  
 }
 
 .hero__blocks {
@@ -91,6 +103,7 @@ font-variant: small-caps;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px hsla(288, 97%, 27%, 0.6);
+  transition: .3s ease-in-out;
 }
 
 .hero__btn:hover {
