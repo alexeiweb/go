@@ -112,8 +112,7 @@
 }
 
 .booking__radio input:focus + .booking__radio_text:before {
-	box-shadow: 0 0 0 1px #CD06FF; 
-  border-radius: 0; 
+	box-shadow: 0 0 0 1px #CD06FF;
 }
 
 /* Checkbox */
