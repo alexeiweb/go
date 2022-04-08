@@ -38,18 +38,31 @@
 }
 
 .contacts__social {
+  display: flex;
+  gap: 26px;
   padding: 0;
   margin: 0;
 }
+/* 
+.contacts__item {  
+  transition: color .3s ease-in-out;
+} */
 
-.contacts__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 26px;  
+.contacts__link {
+  transition: color .3s ease-in-out;  
 }
 
-.contacts__item:last-child {
-  margin-right: 0;
+.contacts__link:hover {
+  color: #EADEED;
+}
+
+.contacts__link:focus {
+  color: #EADEED;
+  border: 1px solid #CD06FF;
+}
+
+.contacts__link:active {
+  color: #CD06FF;
 }
 
 .contacts__map {

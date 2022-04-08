@@ -93,10 +93,6 @@
 	background: #fff;
 }
 
-.booking__radio_text:active:before {
-  border: 1px solid #CD06FF;
-}
-
 .booking__radio_text:after {
 	content: '';
 	position: absolute;
@@ -105,7 +101,7 @@
 	width: 14px;
 	height: 14px;
 	border-radius: 50%;
-	background: hsl(288, 69%, 10%);
+	background: #CD06FF;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
 	opacity: 0;
 	transition: .2s;
@@ -116,7 +112,8 @@
 }
 
 .booking__radio input:focus + .booking__radio_text:before {
-	box-shadow: 0 0 0 3px #CD06FF;  
+	box-shadow: 0 0 0 1px #CD06FF; 
+  border-radius: 0; 
 }
 
 /* Checkbox */
@@ -160,16 +157,12 @@
   opacity: 0;
 }
 
-.booking__checkbox input:checked + .booking__checkbox_text:before {
-	background: #eccbf4;
-}
-
 .booking__checkbox input:checked + .booking__checkbox_text:after {
 	opacity: 1;
 }
 
 .booking__checkbox input:focus + .booking__checkbox_text:before {
-	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 3px #CD06FF;
+	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 1px #CD06FF;
 }
 
 .booking__date_wrapper {
@@ -188,6 +181,12 @@
 .booking__date_list {
   display: flex;
   justify-content: space-between;
+  transition: .3s ease-in-out;
+}
+
+.booking__date_list input:focus {  
+  border: 3px solid #CD06FF;
+  outline: none;  
 }
 
 ::-webkit-datetime-edit { 
@@ -236,6 +235,11 @@
 	background-size: 47px 12px;
 }
 
+.booking__number:focus {  
+  border: 3px solid #CD06FF;
+  outline: none;  
+}
+
 .date-title {
   font-weight: 700;
   font-size: 14px;
@@ -257,9 +261,9 @@
   height: 52px;  
 }
 
-.booking__date_name:focus input {
-  border: none;
+.booking__date_name input:focus {  
   border: 3px solid #CD06FF;
+  outline: none;  
 }
 
 .booking__date_second-name input {
@@ -267,14 +271,29 @@
   height: 52px;
 }
 
+.booking__date_second-name input:focus {  
+  border: 3px solid #CD06FF;
+  outline: none;  
+}
+
 .booking__date_phone input {
   width: 280px;
   height: 52px;
 }
 
+.booking__date_phone input:focus {  
+  border: 3px solid #CD06FF;
+  outline: none;  
+}
+
 .booking__date_email input {
   width: 280px;
   height: 52px;
+}
+
+.booking__date_email input:focus {  
+  border: 3px solid #CD06FF;
+  outline: none;  
 }
 
 .booking__date_name:before {
