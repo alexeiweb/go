@@ -93,24 +93,6 @@
 	background: #fff;
 }
 
-.booking__radio_text:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 6px;
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	background: #CD06FF;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
-	opacity: 0;
-	transition: .2s;
-}
-
-.booking__radio input:checked + .booking__radio_text:after {
-	opacity: 1;
-}
-
 .booking__radio input:focus + .booking__radio_text:before {
 	box-shadow: 0 0 0 1px #CD06FF;
 }
@@ -140,20 +122,6 @@
 	background: #fff;
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
 	transition: .3s ease-in-out;
-}
-
-.booking__checkbox_text:after {
-	content: '';
-	position: absolute;
-	left: 4px;
-  top: 2px;
-  width: 17px;
-  height: 10px;
-  border-radius: 1px;
-  border-left: 4px solid #440F51;
-  border-bottom: 4px solid #440F51;
-  transform: rotate(-45deg);
-  opacity: 0;
 }
 
 .booking__checkbox input:checked + .booking__checkbox_text:after {

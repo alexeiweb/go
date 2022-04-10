@@ -49,7 +49,7 @@
   transition: color .3s ease-in-out;  
 }
 
-.contacts__link:hover {
+.contact__link:hover {
   color: #EADEED;
 }
 

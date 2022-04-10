@@ -29,32 +29,29 @@
   top: -80px;
 }
 
-.hero__subtitle:after {
+.hero__down {  
   position: absolute;
-  content: "";  
-  background: url("../img/down.svg") top left no-repeat;
-  width: 97px;
-  height: 97px;
+  content: "";
+  left: 886px;
+  top: 790px;
+  background-color: transparent;
+  border: none;
   z-index: 2;
-  display: block;
-  left: 530px;
-  bottom: -550px;
-  cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: .3s ease-in-out; 
 }
 
-.hero__subtitle:hover:after {
-  background: url("../img/down-hover.svg");
+.hero__down_image:hover {
+  background-image: url("../img/down-hover.svg");
   
 }
 
-.hero__subtitle:focus:after {
-  background: url("../img/down-focus.svg");
+.hero__down_image:focus {
+  background-image: url("../img/down-focus.svg");
   
 }
 
-.hero__subtitle:active:after {
-  background: url("../img/down-active.svg");
+.hero__down_image:active {
+  background-image: url("../img/down-active.svg");
   
 }
 
