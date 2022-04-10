@@ -21,19 +21,13 @@
   border: none;
 }
 
+.faq__image {
+  position: relative;
+}
+
 .faq__item:nth-child(2n) {
   background-color: hsl(288, 69%, 19%);
   color: hsl(0, 0%, 100%);
-}
-
-.faq__image:hover {
-  background-image: url("../img/open-purple-hover.svg");
-  background-repeat: no-repeat;
-}
-
-.faq__image:active {
-  background-image: url("../img/close-purple.svg");  
-  background-repeat: no-repeat;
 }
 
 .faq__image:nth-child(2n) {  
@@ -42,14 +36,27 @@
   transition: .3s ease-in-out;
 }
 
+.faq__image:hover {
+  background-image: url("../img/open-purple-hover.svg");
+  background-repeat: no-repeat;
+}
+
 .faq__image:nth-child(2n):hover {
   background-image: url("../img/open-hover.svg");
   background-repeat: no-repeat;
 }
 
+.faq__image:active {
+  position: absolute;
+  content: "";
+  background-image: url("../img/close-purple.svg");
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
 .faq__image:nth-child(2n):active {
   background-image: url("../img/close.svg");
-  background-color: #fff;
+  background-color: hsl(288, 69%, 19%);
   background-repeat: no-repeat;
 }
 
