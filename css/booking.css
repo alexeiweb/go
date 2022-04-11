@@ -81,8 +81,7 @@
 	cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-
-.booking__radio_text:before {
+.booking__radio_text:after {
 	content: '';
 	position: absolute;
 	top: -3px;
@@ -91,6 +90,16 @@
 	height: 27px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.booking__radio_text:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 27px;
+	height: 27px;
+	background-color: transparent;
 }
 
 .booking__radio input:focus + .booking__radio_text:before {

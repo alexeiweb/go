@@ -46,6 +46,7 @@
 
 .contacts__link {
   display: block;
+  height: 50px;
   transition: color .3s ease-in-out;  
 }
 
