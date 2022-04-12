@@ -47,10 +47,10 @@
 .contacts__link {
   display: block;
   height: 50px;
-  transition: color .3s ease-in-out;  
+  transition: .3s ease-in-out;  
 }
 
-.contact__link:hover {
+.contacts__link:hover {
   color: #EADEED;
 }
 

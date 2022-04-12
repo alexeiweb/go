@@ -1,5 +1,5 @@
 .booking {
-  background-color: hsl(288, 69%, 19%);
+  background-color: hsl(288, 69%, 19%);  
 }
 
 .block-title {
@@ -21,16 +21,16 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: hsl(0, 0%, 0%);;
+  color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   padding: 7px 0;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: .3s ease-in-out;  
 }
 
 .booking__hall_radio:hover {
-  background-color: #EADEED;
+  background: #EADEED;
   border: 3px solid #640AA3;
 }
 
@@ -40,7 +40,6 @@
 
 .booking__hall_radio:active {
   background-color: #EADEED;
-  border: 3px solid #EADEED;
 }
 
 .booking__entertainments_list {
@@ -79,8 +78,8 @@
 	position: relative;
 	padding: 0 0 0 39px;
 	cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
+
 .booking__radio_text:after {
 	content: '';
 	position: absolute;
@@ -100,6 +99,7 @@
 	width: 27px;
 	height: 27px;
 	background-color: transparent;
+  transition: .3s ease-in-out;
 }
 
 .booking__radio input:focus + .booking__radio_text:before {
@@ -152,12 +152,16 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+  
+}
+
+.booking__date_block input {
+  transition: .3s ease-in-out;
 }
 
 .booking__date_list {
   display: flex;
   justify-content: space-between;
-  transition: .3s ease-in-out;
 }
 
 .booking__date_list input:focus {  
@@ -209,6 +213,7 @@
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	background-size: 47px 12px;
+  transition: .3s ease-in-out;
 }
 
 .booking__number:focus {  
@@ -229,7 +234,6 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
-  transition: .3s ease-in-out;
 }
 
 .booking__date_name input {
