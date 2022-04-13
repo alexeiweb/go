@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
-  transition: all .10ms ease-in-out;
+  /* transition: scale 1s ease-in-out; */
 }
 
 .card {
-  transition: all .10ms ease-in-out;
+  transition: scale 1s ease-in-out;
 }
 
 .release__card:hover {

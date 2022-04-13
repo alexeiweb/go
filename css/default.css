@@ -39,7 +39,7 @@ body {
   background: linear-gradient(to bottom, hsl(0,0%,0%) 0%, hsl(0,0%,0%) 90%, hsl(300,70%,13%) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,0%)', endColorstr='#380a38', GradientType=0 );
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 h1, h2, h3, p, figure, blockquote, label {
