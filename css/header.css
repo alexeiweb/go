@@ -22,19 +22,19 @@
   font-weight: 700;
   color: #fff;
   padding: 12px 32px;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--main-color);
   border-radius: 10px;
   transition: .3s ease-in-out;
 }
 
 .header__btn:hover {
-  background-color: #6C0287;
+  background-color: var(--main-color);
 }
 
 .header__btn:focus {
-  background-color: #6C0287;
+  background-color: var(--main-color);
 }
 
 .header__btn:active {
-  background-color: #640AA3;
+  background-color: var(--secondary-color);
 }

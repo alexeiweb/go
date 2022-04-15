@@ -34,7 +34,7 @@
 }
 
 .faq__item:nth-child(2n) {
-  background-color: hsl(288, 69%, 19%);
+  background-color: #440F51;
   color: hsl(0, 0%, 100%);
   transition: .3s ease-in-out;
 }

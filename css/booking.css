@@ -1,5 +1,5 @@
 .booking {
-  background-color: hsl(288, 69%, 19%);  
+  background-color: #440F51;  
 }
 
 .block-title {
@@ -31,11 +31,11 @@
 
 .booking__hall_radio:hover {
   background: #EADEED;
-  border: 3px solid #640AA3;
+  border: 3px solid var(--secondary-color);
 }
 
 .booking__hall_radio:focus {
-  border: 3px solid #640AA3;
+  border: 3px solid var(--secondary-color);
 }
 
 .booking__hall_radio:active {
@@ -103,7 +103,7 @@
 }
 
 .booking__radio input:focus + .booking__radio_text:before {
-	box-shadow: 0 0 0 1px #CD06FF;
+	box-shadow: 0 0 0 1px var(--secondary-color);
 }
 
 /* Checkbox */
@@ -138,7 +138,7 @@
 }
 
 .booking__checkbox input:focus + .booking__checkbox_text:before {
-	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 1px #CD06FF;
+	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 1px var(--secondary-color);
 }
 
 .booking__date_wrapper {
@@ -165,7 +165,7 @@
 }
 
 .booking__date_list input:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -217,7 +217,7 @@
 }
 
 .booking__number:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -242,7 +242,7 @@
 }
 
 .booking__date_name input:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -252,7 +252,7 @@
 }
 
 .booking__date_second-name input:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -262,7 +262,7 @@
 }
 
 .booking__date_phone input:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -272,7 +272,7 @@
 }
 
 .booking__date_email input:focus {  
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--secondary-color);
   outline: none;  
 }
 
@@ -313,22 +313,22 @@
   background-color: hsl(0, 0%, 100%);
   border: 3px solid #fff;
   border-radius: 10px;
-  color: #6C0287;
+  color: var(--main-color);
   padding: 15px 60px;
   margin-left: auto;
   transition: .3s ease-in-out;
 }
 
 .booking__btn:hover {
-  background-color: #EADEED;
-  border: 3px solid #6C0287;
+  background-color: var(--next-color);
+  border: 3px solid var(--main-color);
 }
 
 .booking__btn:focus {
-  border: 3px solid #6C0287;
+  border: 3px solid var(--main-color);
 }
 
 .booking__btn:active {
-  border: 3px solid #EADEED;
-  background-color: #EADEED;
+  border: 3px solid var(--next-color);
+  background-color: var(--next-color);
 }
