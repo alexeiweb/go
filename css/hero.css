@@ -52,7 +52,7 @@
   background-image: url("../img/down-focus.svg");
   width: 100px;
   height: 100px;
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--add-color);
 }
 
 .hero__down:active {
@@ -77,7 +77,7 @@
 .hero__block_title {
   font-weight: 900;
   font-size: 100px;
-  color: hsl(288, 100%, 51%);
+  color: var(--add-color);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -109,7 +109,7 @@ font-variant: small-caps;
 }
 
 .hero__btn:hover {
-  background-color: #840AA3;
+  background-color: var(--bg-next-color);
 }
 
 .hero__btn:focus {

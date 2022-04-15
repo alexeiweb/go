@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;  
+  background-color: var(--bg-color);  
 }
 
 .block-title {
@@ -30,7 +30,7 @@
 }
 
 .booking__hall_radio:hover {
-  background: #EADEED;
+  background: var(--next-color);
   border: 3px solid var(--secondary-color);
 }
 
@@ -39,7 +39,7 @@
 }
 
 .booking__hall_radio:active {
-  background-color: #EADEED;
+  background-color: var(--next-color);
 }
 
 .booking__entertainments_list {

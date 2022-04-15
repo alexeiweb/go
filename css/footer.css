@@ -56,12 +56,12 @@
 
 .contacts__link:focus {
   color: var(--next-color);
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--add-color);
   outline: none;
 }
 
 .contacts__link:active {
-  color: #CD06FF;
+  color: var(--add-color);
 }
 
 .contacts__map {
