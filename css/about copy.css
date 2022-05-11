@@ -1,7 +1,10 @@
 .about__content {
-  display: grid;
-  grid-template-columns: 600px auto;
-  grid-template-rows: 1fr 1fr 1fr;  
+  display: flex;
+}
+
+.about__content_left {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about__content_right {
