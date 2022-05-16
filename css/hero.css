@@ -3,8 +3,9 @@
 }
 
 .hero__title {
+  position: relative;
   font-weight: 900;
-  font-size: 150px;
+  font-size: 200px;
   letter-spacing: -0.1em;
   line-height: 100%;
 }
@@ -13,8 +14,20 @@
   position: relative;
   font-size: 28px;
   line-height: 50px;
-  padding-left: 100px;  
-  margin-bottom: 65px;
+  padding-left: 210px;    
+  margin-bottom: 58px;
+}
+
+.hero__subtitle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/stroke.svg") top left repeat-y;
+  width: 1172px;
+  height: 700px;
+  z-index: 1;
+  top: -15px;
+  left: 0;
 }
 
 .hero__subtitle:before {
@@ -29,17 +42,18 @@
   top: -80px;
 }
 
-.hero__down {  
+.hero__title:after { 
+  display: block; 
   position: absolute;
   content: "";
   width: 97px;
   height: 97px;
-  left: 895px;
-  top: 790px;
+  left: 530px;
+  top: 700px;
   background-color: transparent;
   background-image: url("../img/down.svg");
   border: none;
-  z-index: 2;
+  z-index: 3;
   transition: .3s ease-in-out; 
 }
 
@@ -56,15 +70,29 @@
 }
 
 .hero__down:active {
-  background-image: url("../img/down-active.svg");
-  
+  background-image: url("../img/down-active.svg");  
 }
 
 .hero__blocks {
   display: flex;
+  gap: 61px;
+  margin-bottom: 168px;
 }
 
-.hero__block {
+.hero__block_title {
+  width: 179px;
+  height: 155px;
+  background-image: url('../img/hero_4.png');
+}
+
+.hero__block_desc {
+  width: 151px;
+  height: 132px;
+  background-image: url('../img/hero-new.png');
+  padding-top: 24px;
+}
+
+/* .hero__block {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -92,7 +120,7 @@ font-variant: small-caps;
   text-align: center;
   font-size: 30px;
   margin-bottom: 150px;
-}
+} */
 
 .hero__btn {
   font-weight: 700;
@@ -106,6 +134,8 @@ font-variant: small-caps;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px hsla(288, 97%, 27%, 0.6);
   transition: .3s ease-in-out;
+  position: absolute;
+  z-index: 3;
 }
 
 .hero__btn:hover {
@@ -118,4 +148,9 @@ font-variant: small-caps;
 
 .hero__btn:active {
   background-color: var(--secondary-color);
+}
+
+
+@media (max-width: 1440px) {
+
 }
