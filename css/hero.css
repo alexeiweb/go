@@ -85,6 +85,7 @@
   width: 179px;
   height: 155px;
   background-image: url('../img/hero_4.png');
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -92,7 +93,7 @@
   width: 151px;
   height: 132px;
   background-image: url('../img/hero-new.png');
-  padding-top: 24px;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -157,6 +158,7 @@ font-variant: small-caps;
 
 @media (max-width: 1200px) {
   .hero {
+    height: 622px;
     padding: 29px 0;
   }
 
@@ -205,5 +207,107 @@ font-variant: small-caps;
     font-size: 22px;
     line-height: 30px;
     padding: 17px 48px;
+  }
+}
+
+@media (max-width: 768px) {  
+  .container {
+    padding: 0 43px;
+  }
+
+  .hero__title {
+    font-size: 116px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 100px;    
+    margin-bottom: 62px;
+  }
+  
+  .hero__subtitle:before {
+    width: 409px;
+    height: 479px;
+    left: 270px;
+    top: -55px;
+  }
+  
+  .hero__title:after {
+    display: none;
+  }
+  
+  .hero__blocks {
+    margin-bottom: 131px;
+  }
+
+  .hero__block_title {
+    width: 88px;
+    height: 74px;
+  }
+
+  .hero__block_desc {
+    width: 78px;
+    height: 69px;
+  }
+  
+  .hero__btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 34px;
+  }  
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    height: 230px;
+    padding: 20px 0;
+  }
+  
+  .hero__title {
+    font-size: 46px;
+    letter-spacing: -0.08em;
+    text-align: left;
+  }
+  
+  .hero__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 0;
+    margin-bottom: 21px;
+  }
+  
+  .hero__subtitle:after {
+    display: none;
+  }
+  
+  .hero__subtitle:before {
+    width: 161px;
+    height: 179px;
+    left: 117px;
+    top: -23px;
+  }
+  
+  .hero__blocks {
+    gap: 23px;
+    margin-bottom: 32px;
+  }
+  
+  .hero__block_title {
+    width: 50px;
+    height: 42px;
+  }
+  
+  .hero__block_desc {
+    width: 44px;
+    height: 40px;
+  }
+  
+  .hero__btn {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 13px;
+    border-radius: 4px;
   }
 }

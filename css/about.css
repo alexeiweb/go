@@ -72,7 +72,6 @@
   line-height: 28px;
 }
 
-
 @media (max-width: 1280px) {
   .about__content {
     grid-template-columns: 380px 1fr;
@@ -106,7 +105,6 @@
     padding-left: 80px;
   }
 }
-
 
 @media (max-width: 768px) {
   .about__content {
@@ -153,7 +151,6 @@
     line-height: 26px;
   }
 }
-
 
 @media (max-width: 480px) {
   .about__content {
