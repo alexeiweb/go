@@ -151,6 +151,9 @@ font-variant: small-caps;
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
 
+  .hero__title {
+    font-size: 152px;
+  }
 }
