@@ -34,6 +34,7 @@
   content: "";
   position: absolute;
   background: url("../img/hero.png") top left no-repeat;
+  background-size: contain;
   width: 675px;
   height: 762px;
   z-index: 2;
@@ -52,6 +53,7 @@
   top: 700px;
   background-color: transparent;
   background-image: url("../img/down.svg");
+  background-size: contain;
   border: none;
   z-index: 3;
   transition: .3s ease-in-out; 
@@ -152,8 +154,30 @@ font-variant: small-caps;
 
 
 @media (max-width: 1200px) {
+  .hero {
+    padding: 29px 0;
+  }
+
+  .container {
+    padding: 0 60px;
+  }
 
   .hero__title {
     font-size: 152px;
+    text-align: center;
+  }
+  
+  .hero__subtitle:before {
+    width: 520px;
+    height: 453px;
+    right: -88px;
+    top: -90px;
+  }
+  
+  .hero__title:after {
+    width: 67px;
+    height: 67px;
+    left: 500px;
+    top: 415px;
   }
 }
