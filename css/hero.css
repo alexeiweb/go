@@ -87,7 +87,7 @@
   background-image: url("../img/down-active.svg");  
 }
 
-.hero__blocks {
+.hero__block {
   display: flex;
   gap: 61px;
   margin-bottom: 168px;
@@ -202,7 +202,7 @@ font-variant: small-caps;
     top: 488px;
   }
   
-  .hero__blocks {
+  .hero__block {
     margin-bottom: 100px;
   }
 
@@ -250,7 +250,7 @@ font-variant: small-caps;
     display: none;
   }
   
-  .hero__blocks {
+  .hero__block {
     margin-bottom: 131px;
   }
 
@@ -302,7 +302,7 @@ font-variant: small-caps;
     top: -23px;
   }
   
-  .hero__blocks {
+  .hero__block {
     gap: 23px;
     margin-bottom: 32px;
   }

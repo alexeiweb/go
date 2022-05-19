@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GAME OVER - Новый формат игр и отдыха</title>
 
-  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -52,7 +52,7 @@
 
         <p class="hero__subtitle">Новый формат игр и отдыха</p>
 
-        <div class="hero__blocks">
+        <div class="hero__block">
           <div class="hero__block_title"></div>
   
           <div class="hero__block_desc"></div>
@@ -64,8 +64,8 @@
       </div>
     </section>
 
-    <section class="release release__container">
-      <div class="container">
+    <section class="release">
+      <div class="container release__container">
         <h2 class="release__title title">У нас есть все для классного<br>
           отдыха с друзьями!</h2>
   
@@ -156,29 +156,37 @@
                 <h3 class="booking__entertainments_title">Приставка:</h3>
     
                 <div class="booking__entertainments_wrapper">
-                  <label class="booking__radio">
-                    <input type="radio" name="console" value="Play Station">
+                  <div class="booking__radio">
+                    <label>
+                      <input type="radio" name="console" value="Play Station">                    
+                    </label>
   
                     <p class="booking__radio_text">Play Station</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__radio">
-                    <input type="radio" name="console" value="Sega Mega Drive">
-  
+                  <div class="booking__radio">
+                    <label>
+                      <input type="radio" name="console" value="Sega Mega Drive">
+                    </label>
+                    
                     <p class="booking__radio_text">Sega Mega Drive</p>
-                  </label>
-      
-                  <label class="booking__radio">
-                    <input type="radio" name="console" value="X-box One S">
-  
+                  </div>
+
+                  <div class="booking__radio">
+                    <label>
+                      <input type="radio" name="console" value="X-box One S">
+                    </label>
+
                     <p class="booking__radio_text">X-box One S</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__radio">
-                    <input type="radio" name="console" value="Dendy">
-  
+                  <div>
+                    <label class="booking__radio">
+                      <input type="radio" name="console" value="Dendy">
+                    </label>
+
                     <p class="booking__radio_text">Dendy</p>
-                  </label>
+                  </div>
                 </div>
               </div>
     
@@ -186,29 +194,37 @@
                 <h3 class="booking__entertainments_title">Настольные игры</h3>
     
                 <div class="booking__entertainments_wrapper">
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="game" value="Jenga">
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="game" value="Jenga">
+                    </label>
   
                     <p class="booking__checkbox_text">Jenga</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="game" value="Monopoly">
-  
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="game" value="Monopoly">
+                    </label>
+                    
                     <p class="booking__checkbox_text">Monopoly</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="game" value="Manchkin">
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="game" value="Manchkin">
+                    </label>
   
                     <p class="booking__checkbox_text">Манчкин</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="game" value="Alias">
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="game" value="Alias">
+                    </label>
   
                     <p class="booking__checkbox_text">Alias</p>
-                  </label>
+                  </div>
                 </div>
               </div>
     
@@ -216,17 +232,21 @@
                 <h3 class="booking__entertainments_title">Дополнительно</h3>
     
                 <div class="booking__entertainments_wrapper">
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="further" value="Karaoke">
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="further" value="Karaoke">
+                    </label>
   
                     <p class="booking__checkbox_text">Караоке</p>
-                  </label>
+                  </div>
       
-                  <label class="booking__checkbox">
-                    <input type="checkbox" name="further" value="VR">
+                  <div class="booking__checkbox">
+                    <label>
+                      <input type="checkbox" name="further" value="VR">
+                    </label>
   
                     <p class="booking__checkbox_text">VR</p>
-                  </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,11 +259,11 @@
               <div class="booking__date_block">
                 <div class="booking__date_list">
                   <label>
-                    <input class="booking__date_item" type="date" name="date" placeholder="Дата">
+                    <input class="booking__date_item" type="date" name="date">
                   </label>
         
                   <label>
-                    <input class="booking__time_item" type="time" name="time" placeholder="Время">
+                    <input class="booking__time_item" type="time" name="time">
                   </label>
                 </div>
       
@@ -281,7 +301,7 @@
       
                 <div class="booking__date_email">
                   <label>
-                    <input type="mailto" name="email">
+                    <input type="email" name="email">
                   </label>
                 </div>
               </div>
@@ -443,7 +463,7 @@
       
               <li class="contacts__item">
                 <a href="#" class="contacts__link" target="_blank">
-                  <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 25.14C0 37.569 9.027 47.904 20.834 50V31.944h-6.25V25h6.25v-5.556c0-6.25 4.026-9.721 9.722-9.721 1.805 0 3.75.277 5.555.554v6.39h-3.194c-3.057 0-3.75 1.527-3.75 3.473V25h6.666l-1.11 6.944h-5.556V50C40.973 47.904 50 37.57 50 25.14 50 11.312 38.75 0 25 0S0 11.313 0 25.14Z" fill="currentColor"/></g><defs><clipPath id="a">
+                  <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 25.14C0 37.569 9.027 47.904 20.834 50V31.944h-6.25V25h6.25v-5.556c0-6.25 4.026-9.721 9.722-9.721 1.805 0 3.75.277 5.555.554v6.39h-3.194c-3.057 0-3.75 1.527-3.75 3.473V25h6.666l-1.11 6.944h-5.556V50C40.973 47.904 50 37.57 50 25.14 50 11.312 38.75 0 25 0S0 11.313 0 25.14Z" fill="currentColor"/></g><defs><clipPath id="">
                     <path fill="currentColor" d="M0 0h50v50H0z"/></clipPath></defs></svg>
                 </a>
               </li>
