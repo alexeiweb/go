@@ -96,10 +96,6 @@
 }
 
 @media (max-width: 480px) {
-  .header__wrapper {
-    justify-content: space-between;
-  }
-  
   .burger {
     width: 39px;
     height: 20px;
