@@ -5,27 +5,22 @@
 }
 
 .halls__card {
-  margin-bottom: 50px;
-}
-
-.halls__card_title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 80px;
-  text-transform: uppercase;  
-  color: #fff;
   width: 580px;
-  height: 349px;
-  margin: 0 auto;
+  height: 349px;  
+}
+
+.halls__card_title {
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  width: 252px;
 }
 
 .hall-vibes {
-  background-image: url(../img/hall-1.jpg);
-  
+  background-image: url(../img/hall-1.jpg);  
 }
 
 .hall-wars {
@@ -38,4 +33,17 @@
 
 .hall-neon {
   background-image: url(../img/hall-4.jpg);  
+}
+
+
+@media (max-width: 1024px) {
+  .halls__card {
+    width: 335px;
+    height: 200px;  
+  }
+
+  .halls__card_title {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

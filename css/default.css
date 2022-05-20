@@ -90,6 +90,13 @@ button {
 }
 
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -105,13 +112,15 @@ button {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 40px;
+    max-width: 768px;
+    padding: 0 43px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 20px;
+    max-width: 320px;
+    padding: 0 21px;
   }
 }
 
