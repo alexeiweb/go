@@ -38,12 +38,31 @@
 
 @media (max-width: 1024px) {
   .halls__card {
-    width: 335px;
-    height: 200px;  
+    width: 440px;
+    height: 265px;  
   }
 
   .halls__card_title {
     font-size: 50px;
     line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .halls__card {
+    width: 330px;
+    height: 197px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .halls__cards {
+    justify-content: center;
+    gap: 10px 0;
+  }
+
+  .halls__card {
+    width: 280px;
+    height: 168px;    
   }
 }

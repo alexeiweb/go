@@ -74,7 +74,7 @@ button {
 
 .container {
   max-width: 1440px;
-  padding: 0 60px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -92,8 +92,8 @@ button {
 
 @media (max-width: 1440px) {
   .container {
-    max-width: 1200px;
-    padding: 0 60px;
+    max-width: 1240px;
+    padding: 0 30px;
   }
   
   .title {
@@ -105,14 +105,14 @@ button {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 960px;
-    padding: 0 40px;
+    max-width: 964px;
+    padding: 0 30px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 728px;
     padding: 0 20px;
   }
 }
@@ -120,6 +120,6 @@ button {
 @media (max-width: 480px) {
   .container {
     min-width: 280px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
