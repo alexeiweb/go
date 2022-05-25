@@ -1,6 +1,6 @@
 .release__cards {
   display: grid;
-  grid-template-columns: repeat(3, 380px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 228px);
   gap: 40px 20px;
 }
@@ -8,6 +8,12 @@
 .release__card {
   transition: 0.3s ease-in-out;
   background-size: cover;
+  /*ADD*/
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+  padding: 0 0 30px 40px;
 }
 
 .release__card:hover {
@@ -18,9 +24,10 @@
   font-weight: 700;
   line-height: 28px;
   color: #fff;
-  padding-top: 166px;
+  /*DEL*/
+  /* padding-top: 166px;
   padding-left: 40px;
-  margin-bottom: auto;
+  margin-bottom: auto; */
 }
   
 .card-vr {
@@ -50,17 +57,17 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .release__cards {
-    grid-template-columns: repeat(3, 287px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 182px);
     gap: 30px 22px;
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 1024px) { 
   .release__cards {
-    grid-template-columns: repeat(2, 334px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px);
     gap: 20px;
   }
@@ -69,13 +76,24 @@
   .card-films {
     transform: translateY(0);
   }
+
+  .release__card {
+    padding: 0 0 20px 20px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .release__cards {
     grid-template-columns: repeat(2, 134px);
     grid-template-rows: repeat(3, 75px);
     gap: 10px;
+    /*ADD*/
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .release__card {
+    padding: 0 0 30px 10px;
   }
   
   .release__card_desc {
