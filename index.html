@@ -104,7 +104,7 @@
     </section>
 
     <section class="halls" id="halls">
-      <div class="container halls__container">
+      <div class="container">
         <h2 class="halls__title title">наши залы</h2>
 
         <div class="halls__cards">
@@ -128,7 +128,7 @@
     </section>
 
     <section class="booking" id="booking">
-      <div class="container booking__container">
+      <div class="container">
         <form action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="booking__title title">Забронировать зал просто</h2>
   
@@ -260,7 +260,7 @@
             <h3 class="booking__date_title block-title">Выбери дату и время</h3>
   
             <div class="booking__date_wrapper">
-              <div class="booking__date_block">
+              <div class="booking__date_block block-date">
                 <div class="booking__date_list">
                   <label>
                     <input class="booking__date_item" type="date" name="date">
@@ -313,6 +313,65 @@
   
             <button class="booking__btn" type="submit">Забронировать</button>
           </div>
+
+          <!-- <div class="booking__date">
+            <h3 class="booking__date_title block-title">Выбери дату и время</h3>
+  
+            <div class="booking__date_wrapper">
+              <div class="booking__date_block">
+                <div class="booking__date_list">
+                  <label>
+                    <input class="booking__date_item" type="date" name="date">
+                  </label>
+        
+                  <label>
+                    <input class="booking__time_item" type="time" name="time">
+                  </label>
+                </div>
+      
+                <select class="booking__number" name="number">
+                  <option value="">Сколько человек</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                </select>
+              </div>
+    
+              <div class="booking__date_block">
+                <div class="booking__date_name">
+                  <label>
+                    <input type="text" name="name">
+                  </label>
+                </div>
+      
+                <div class="booking__date_second-name">
+                  <label>
+                    <input type="text" name="second name">
+                  </label>
+                </div>
+              </div>
+    
+              <div class="booking__date_block">
+                <div class="booking__date_phone">
+                  <label>
+                    <input type="tel" name="phone">
+                  </label>
+                </div>
+      
+                <div class="booking__date_email">
+                  <label>
+                    <input type="email" name="email">
+                  </label>
+                </div>
+              </div>
+            </div>
+  
+            <button class="booking__btn" type="submit">Забронировать</button>
+          </div> -->
+          
         </form>
       </div>
     </section>
