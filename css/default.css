@@ -121,4 +121,8 @@ button {
     min-width: 280px;
     padding: 0 10px;
   }
+
+  .title {
+    font-size: 14px;
+  }
 }

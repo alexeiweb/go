@@ -14,6 +14,7 @@
 
 .about__content_image {
   grid-column: 1 / 2;
+  grid-row: 1 / 4;
 }
 
 .about__content_desc-text {
@@ -116,6 +117,10 @@
     align-items: center;
   }
 
+  .about__content_image {
+    grid-row: 1 / 2;
+  }
+
   .about__content_desc-text {
     font-size: 16px;
     line-height: 22px;
@@ -155,12 +160,12 @@
 @media (max-width: 480px) {
   .about__content {
     grid-template-columns: 1fr;
-    grid-template-rows: 127px 340px 100px 56px;
+    grid-template-rows: 127px 280px 100px 56px;
     gap: 20px 0;
   }
   
   .about__content_image {
-    grid-column: 1 / 2;
+    width: 280px;
     grid-row: 2 / 3;
   }
 
