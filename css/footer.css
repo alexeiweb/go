@@ -96,6 +96,11 @@
 }
 
 @media (max-width: 320px) {
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
   .contacts__address,
   .contacts__phone,
   .contacts__email {
@@ -115,5 +120,8 @@
     text-align: center;
     gap: 5px;
   }
-
+  
+  .contacts__map {
+    margin-bottom: 63px;
+  }
 }
