@@ -53,24 +53,26 @@
 
   <main class="main">
     <section class="hero">
-      <div class="container hero__container">
-        <h1 class="hero__title">GAME OVER</h1>
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">GAME OVER</h1>
 
-        <p class="hero__subtitle">Новый формат игр и отдыха</p>
+          <p class="hero__subtitle">Новый формат игр и отдыха</p>
 
-        <div class="hero__block">
-          <div class="hero__block_title"></div>
-  
-          <div class="hero__block_desc"></div>
+          <div class="hero__block">
+            <div class="hero__block_title"></div>
+    
+            <div class="hero__block_desc"></div>
+          </div>
+
+          <a href="#booking" class="hero__btn">Забронировать</a>
+          
+          <button class="hero__down" type="submit"></button>
         </div>
-
-        <button class="hero__btn" type="submit">Забронировать</button>
-        
-        <button class="hero__down" type="submit"></button>
       </div>
     </section>
 
-    <section class="release">
+    <section class="release" id="release">
       <div class="container">
         <h2 class="release__title title">У нас есть все для классного<br>
           отдыха с друзьями!</h2>
@@ -137,21 +139,29 @@
           <div class="booking__hall">
             <h3 class="booking__hall_title block-title">Выбери зал</h3>
             <div class="booking__hall_radios">
-              <label class="booking__hall_radio">
-                <input type="radio" name="hall" value="80's vibes" style="display: none;">80's vibes
-              </label>
+              <div class="booking__hall_radio">
+                <label>
+                  <input type="radio" name="hall" value="80's vibes" style="display: none;" checked>80's vibes
+                </label>
+              </div>
     
-              <label class="booking__hall_radio">
-                <input type="radio" name="hall" value="Star wars" style="display: none;">Star wars
-              </label>
+              <div class="booking__hall_radio">
+                <label>
+                  <input type="radio" name="hall" value="Star wars" style="display: none;">Star wars
+                </label>
+              </div>
     
-              <label class="booking__hall_radio">
-                <input type="radio" name="hall" value="Wild west" style="display: none;">Wild west
-              </label>
+              <div class="booking__hall_radio">
+                <label>
+                  <input type="radio" name="hall" value="Wild west" style="display: none;">Wild west
+                </label>
+              </div>
     
-              <label class="booking__hall_radio">
-                <input type="radio" name="hall" value="Neon style" style="display: none;">Neon style
-              </label>
+              <div class="booking__hall_radio">
+                <label>
+                  <input type="radio" name="hall" value="Neon style" style="display: none;">Neon style
+                </label>
+              </div>
             </div>
           </div>
           
@@ -162,15 +172,15 @@
                 <h3 class="booking__entertainments_title">Приставка:</h3>
     
                 <div class="booking__entertainments_wrapper">
-                  <div class="booking__radio">
+                  <div class="booking__entertainments_radio">
                     <label>
-                      <input type="radio" name="console" value="Play Station">                    
+                      <input type="radio" name="console" value="Play Station" checked>                    
                     </label>
   
                     <p class="booking__radio_text">Play Station</p>
                   </div>
       
-                  <div class="booking__radio">
+                  <div class="booking__entertainments_radio">
                     <label>
                       <input type="radio" name="console" value="Sega Mega Drive">
                     </label>
@@ -178,7 +188,7 @@
                     <p class="booking__radio_text">Sega Mega Drive</p>
                   </div>
 
-                  <div class="booking__radio">
+                  <div class="booking__entertainments_radio">
                     <label>
                       <input type="radio" name="console" value="X-box One S">
                     </label>
@@ -187,7 +197,7 @@
                   </div>
       
                   <div>
-                    <label class="booking__radio">
+                    <label class="booking__entertainments_radio">
                       <input type="radio" name="console" value="Dendy">
                     </label>
 
@@ -611,6 +621,7 @@
     </section>
   </footer> 
   
+  <!-- Код для активации focus в браузере Safari -->
   <script>
     document.addEventListener('click', event => {
       if (event.target.matches('button')) {

@@ -9,13 +9,13 @@
 
 .booking__hall_radios {
   display: flex;
-  justify-content: space-between;
+  gap: 60px;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
 .booking__hall_radio {
   width: 250px;
-  height: 55px;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -23,23 +23,27 @@
   text-transform: uppercase;
   color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(0, 0%, 100%);
   border-radius: 8px;
-  padding: 7px 0;
-  cursor: pointer;
-  transition: .3s ease-in-out;  
+  padding: 7px 15px;
+  cursor: pointer;   
 }
 
 .booking__hall_radio:hover {
-  background: var(--next-color);
+  background-color: var(--next-color);
   border: 3px solid var(--secondary-color);
+  transition: .3s ease-in-out;
 }
 
 .booking__hall_radio:focus {
+  background-color: hsl(0, 0%, 100%);
   border: 3px solid var(--secondary-color);
+  transition: .3s ease-in-out;
 }
 
 .booking__hall_radio:active {
   background-color: var(--next-color);
+  transition: .3s ease-in-out;
 }
 
 .booking__entertainments_list {
@@ -59,15 +63,16 @@
   margin-bottom: 40px;
 }
 
+
+/* Radio кнопки */
+
 .booking__entertainments_wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 21px;
 }
 
-/* Radio кнопки */
-
-.booking__radio input {
+.booking__entertainments_radio input {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
@@ -88,7 +93,7 @@
 	width: 27px;
 	height: 27px;
 	border-radius: 50%;
-	background: #fff;
+	background: hsl(0, 0%, 100%);
 }
 
 .booking__radio_text:before {
@@ -102,9 +107,14 @@
   transition: .3s ease-in-out;
 }
 
-.booking__radio input:focus + .booking__radio_text:before {
+.booking__entertainments_radio input:focus + .booking__radio_text:before {
 	box-shadow: 0 0 0 1px var(--secondary-color);
 }
+
+/* .booking__entertainments_radio input[type=radio]:checked+label {
+  background-color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+} */
 
 /* Checkbox */
 
@@ -128,7 +138,7 @@
 	left: 0;
 	width: 25px;
 	height: 25px;
-	background: #fff;
+	background: hsl(0, 0%, 100%);
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
 	transition: .3s ease-in-out;
 }
@@ -141,17 +151,18 @@
 	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 1px var(--secondary-color);
 }
 
-.booking__date {
+/* .booking__date {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;  
-}
+} */
 
 .booking__date_wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   margin-bottom: 40px;
+  justify-content: center;
 }
 
 .booking__date_block {
