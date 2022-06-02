@@ -36,6 +36,12 @@
   background-image: url(../img/hall-4.jpg);  
 }
 
+.halls__card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 
 @media (max-width: 1200px) {
   .halls__card {
@@ -65,5 +71,11 @@
   .halls__card {
     width: 280px;
     height: 168px;    
+  }
+
+  .halls__card_title {
+    width: 100px;
+    font-size: 26px;
+    line-height: 34px;
   }
 }

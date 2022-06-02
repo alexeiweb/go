@@ -49,6 +49,34 @@
   margin-bottom: 40px;
 }
 
+.about__tagline span {
+  font-size: 88px;
+  color: var(--main-color);
+  transform: translateY(20px);
+  transform: scaleY(2);
+}
+
+.about__tagline p:before {
+  content: "\201C";
+  position: absolute;
+  display: inline-block;
+  left: -35px;
+  top: 35px;
+  font-size: 88px;
+  line-height: 0;
+  color: var(--main-color);
+}
+
+.about__tagline p:after {
+content: "\201D";
+position: absolute;
+right: 55px;
+bottom: 10px;
+font-size: 88px;
+line-height: 0;
+color: var(--main-color);
+}
+
 .about__tagline:after {
   content: "";
   display: inline-block;
@@ -145,7 +173,8 @@
     height: 21px;
     background-position-y: 10px;
   } 
-    
+  
+
   .about__founder {
     grid-column: 1 / 3;
     padding-left: 350px;

@@ -96,11 +96,7 @@ button {
     max-width: 1240px;
     padding: 0 30px;
   }
-  
-  .title {
-    font-size: 30px;
-    line-height: 40px;    
-  }
+    
 }
 
 @media (max-width: 1024px) {
@@ -108,12 +104,22 @@ button {
     max-width: 964px;
     padding: 0 30px;
   }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;    
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 728px;
     padding: 0 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    line-height: 36px;    
   }
 }
 
@@ -129,6 +135,7 @@ button {
 
   .title {
     font-size: 14px;
+    line-height: 18px;
     margin-bottom: 15px;
   }
 }
