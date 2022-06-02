@@ -42,24 +42,18 @@
 }
 
 .about__tagline {
-  display: inline-block;
-  font-size: 44px;
-  line-height: 50px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.about__tagline span {
-  font-size: 88px;
-  color: var(--main-color);
-  transform: translateY(20px);
-  transform: scaleY(2);
+    max-width: 419px;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    left: 33px;
+    margin-bottom: 39px;
 }
 
 .about__tagline p:before {
   content: "\201C";
   position: absolute;
-  display: inline-block;
   left: -35px;
   top: 35px;
   font-size: 88px;
@@ -71,13 +65,13 @@
 content: "\201D";
 position: absolute;
 right: 55px;
-bottom: 10px;
+bottom: -25px;
 font-size: 88px;
 line-height: 0;
 color: var(--main-color);
 }
 
-.about__tagline:after {
+/* .about__tagline:after {
   content: "";
   display: inline-block;
   background-image: url("../img/quote.svg");
@@ -87,7 +81,7 @@ color: var(--main-color);
   height: 50px;
   background-size: contain;
   transform: rotate(180deg);
-}
+} */
 
 .about__founder {
   padding-left: 180px;
@@ -101,10 +95,10 @@ color: var(--main-color);
   line-height: 28px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .about__content {
     grid-template-columns: 380px 1fr;
-    grid-template-rows: 195px 146px 78px;
+    grid-template-rows: 166px 104px 78px;
     gap: 26px 40px;
   }
 
@@ -113,22 +107,24 @@ color: var(--main-color);
     line-height: 24px;
   }
 
-  .about__quote:before {
-    width: 15px;
-    height: 36px;
-  }
-
-  .about__tagline:after {
-    width: 15px;
-    height:36px;
-    background-position-y: 10px;
-  }  
-
   .about__tagline {
+    max-width: 380px;
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 13px;
   }
+
+  .about__tagline p:before {
+    left: -35px;
+    top: 28px;
+    font-size: 70px;
+  }
+
+  .about__tagline p:after {
+    right: 126px;
+    bottom: -12px;
+    font-size: 70px;
+    }
   
   .about__founder {
     padding-left: 80px;
