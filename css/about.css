@@ -168,8 +168,7 @@ color: var(--main-color);
   .about__tagline:after {
     height: 21px;
     background-position-y: 10px;
-  } 
-  
+  }   
 
   .about__founder {
     grid-column: 1 / 3;
