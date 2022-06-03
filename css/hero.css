@@ -46,7 +46,7 @@
   top: 65px;
 }
 
-.hero__wrapper:after { 
+.hero__down { 
   display: block; 
   position: absolute;
   content: "";
@@ -179,7 +179,7 @@
     top: 55px;
   }
 
-  .hero__wrapper:after {
+  .hero__down {
     display: none;
   }
 
