@@ -28,7 +28,7 @@
   padding: 7px 15px;
   cursor: pointer;   
 }
-
+.booking__hall_radio-click,
 .booking__hall_radio:hover {
   background-color: var(--next-color);
   border: 3px solid var(--secondary-color);
@@ -106,7 +106,6 @@
 	background-color: transparent;
   transition: .3s ease-in-out;
 }
-
 .booking__entertainments_radio input:focus + .booking__radio_text:before {
 	box-shadow: 0 0 0 1px var(--secondary-color);
 }

@@ -5,6 +5,13 @@ new Swiper(".swiper", {
   },
 });
 
+$(document).ready(function(){
+  $('.booking__hall_radio').on('click', function(){
+    $('.booking__hall_radio').removeClass('booking__hall_radio-click');
+    $(this).addClass('booking__hall_radio-click');
+  })
+});
+
 // $('.faq__list').accordion({
 //   active: true,
 //   collapsible: true,
