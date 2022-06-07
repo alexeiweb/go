@@ -4,7 +4,6 @@
 
 .block-title {
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .booking__hall_radios {
@@ -48,7 +47,6 @@
   background-color: var(--next-color);
   border: 3px solid var(--next-color);
 }
-
 
 .booking__entertainments_list {
   display: flex;
@@ -182,28 +180,15 @@
 } */
 
 .booking__date_title {
-  display: block;
   text-align: center;
 }
 
 .booking__date_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px 36px;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  /* display: grid;
-  grid-template-columns: 300px minmax(251px, 280px) minmax(254px, 300px);
+  display: grid;
+  grid-template-columns: 300px 280px 300px;
   grid-template-rows: 52px 52px 64px;
   gap: 50px 36px;
-  justify-content: center; */
-}
-
-.booking__date_block {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  justify-content: center;
 }
 
 .booking__date_item,
@@ -256,8 +241,9 @@
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	background-size: 47px 12px;
-  padding: 12px 20px;
   transition: .3s ease-in-out;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .booking__number:focus {  
@@ -278,6 +264,15 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
+}
+
+.booking__date_second-name {
+  grid-column: 2 / 3;
+}
+
+.booking__date_phone {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 .booking__date_name input {
@@ -348,10 +343,6 @@
   top: -17px;
 }
 
-.booking__btn_wrapper {
-  margin-left: auto;
-}
-
 .booking__btn {
   font-weight: 700;
   font-size: 22px;
@@ -361,8 +352,7 @@
   border: 3px solid #fff;
   border-radius: 10px;
   color: var(--main-color);
-  width: 300px;
-  padding: 16px 0;  
+  grid-column: 3 / 4;
   transition: .3s ease-in-out;
 }
 
@@ -612,7 +602,6 @@
   }
 
   .booking__btn {
-    width: 254px;
     font-size: 18px;
     line-height: 24px;
     padding: 13px 45px;
@@ -673,6 +662,32 @@
 
   .booking__date_name input {
     width:280px; 
+  }
+
+  .booking__date_name {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .booking__date_second-name {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .booking__number {
+    width: 300px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .booking__date_phone {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .booking__date_email {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   .booking__date_second-name input {

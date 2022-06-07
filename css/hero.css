@@ -22,17 +22,19 @@
   margin-bottom: 58px;
 }
 
-.hero__subtitle:after {
+/* Фоновая надпись GAME OVER */
+
+/* .hero__subtitle:after {
   content: "";
   display: block;
   position: absolute;
-  background: url("../img/stroke.svg") top left repeat-y;
-  width: 1172px;
+  background: url("../img/stroke.svg") top left repeat-y;  
+  width: 904px;
   height: 700px;
   z-index: 1;
   top: -15px;
   left: 0;
-}
+} */
 
 .hero__wrapper:before {
   content: "";
