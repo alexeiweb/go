@@ -81,11 +81,11 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .faq__item {
     font-size: 12px;
     line-height: 16px;
-    padding: 7px 0 10px 7px;
+    padding: 7px 10px;
   }
 
   .faq__btn {
