@@ -79,7 +79,7 @@
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .header__logo {
     width: 87px;
     height: 55px;
@@ -96,10 +96,6 @@
     line-height: 24px;
     padding: 10px 26px;
   }
-}
-
-@media (max-width: 1024px) {
-
 }
 
 @media (max-width: 768px) {

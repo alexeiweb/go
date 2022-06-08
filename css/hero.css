@@ -171,6 +171,13 @@
     line-height: 30px;
     padding: 17px 48px;
   }
+
+  .hero__down {
+    width: 67px;
+    height: 67px;
+    right: 420px;
+    top: 375px;
+  }
 }
 
 @media (max-width: 768px) {  
