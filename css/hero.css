@@ -123,17 +123,19 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .hero {
     height: 583px;
   }
 
   .hero__title {
-    font-size: 120px;
+    font-size: 119px;
     line-height: 1;
+    letter-spacing: -0.1em;
   }
 
   .hero__wrapper:before {
+    right: -77px;
     width: 453px;
     height: 420px;
   }
@@ -175,12 +177,12 @@
   .hero__down {
     width: 67px;
     height: 67px;
-    right: 420px;
+    right: 343px;
     top: 375px;
   }
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 1023px) {  
   .hero__wrapper:before {
     width: 409px;
     height: 479px;
@@ -225,7 +227,7 @@
   }  
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .hero {
     height: 204px;
     padding: 0;
