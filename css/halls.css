@@ -43,7 +43,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
   .halls__card {
     width: 435px;
     height: 260px;  
@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .halls__card {
     width: 330px;
     height: 197px;  
@@ -68,10 +68,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .halls__cards {
     justify-content: center;
-    gap: 10px 0;
+    gap: 10px 10px;
   }
 
   .halls__card {

@@ -123,7 +123,7 @@
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .hero {
     height: 583px;
   }
@@ -227,7 +227,7 @@
   }  
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .hero {
     height: 204px;
     padding: 0;
