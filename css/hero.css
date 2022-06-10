@@ -70,8 +70,8 @@
 
 .hero__down:focus {
   background-image: url("../img/down-focus.svg");
-  width: 100px;
-  height: 100px;
+  width: 67px;
+  height: 67px;
   border: 1px solid var(--add-color);
 }
 
@@ -227,11 +227,17 @@
   }  
 }
 
+@media (max-width: 767px) {  
+  .hero__wrapper:before {
+    left: 120px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
     height: 204px;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 20px;    
   }
   
   .hero__title {

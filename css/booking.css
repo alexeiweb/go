@@ -89,6 +89,16 @@
   transition: .3s ease-in-out;
 }
 
+.booking__radio_text:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -1px;
+	width: 29px;
+	height: 29px;
+	background-color: transparent;  
+}
+
 .booking__radio_text:after {
 	content: '';
 	position: absolute;
@@ -100,19 +110,38 @@
 	background: hsl(0, 0%, 100%);
 }
 
-.booking__radio_text:before {
-	content: '';
-	position: absolute;
-	top: -4px;
-	left: -1px;
-	width: 29px;
-	height: 29px;
-	background-color: transparent;  
-}
-
-.booking__radio_text:focus:before,
+/* .booking__radio_text:focus:before,
 .booking__radio_text:active:before {
   border: 1px solid var(--add-color);  
+} */
+
+.booking__entertainments_radio input[type=radio] {
+  display: none;
+}
+
+.booking__entertainments_radio input[type=radio]:checked+label:before {
+  color: var(--add-color);
+  border: 1px solid var(--add-color);
+  width: 33px;
+  height: 33px;
+}
+
+.booking__entertainments_radio label {
+  font-size: 22px;
+  line-height: 25px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-left: 40px;
+}
+
+.booking__entertainments_radio label:before {
+  content: '';
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 0;
+  border: 1px solid var(--add-color);
 }
 
 /* .booking__entertainments_radio input:focus + .booking__radio_text:before {
@@ -140,6 +169,16 @@
   transition: .3s ease-in-out;
 }
 
+.booking__checkbox_text:before {
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -2px;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;  
+}
+
 .booking__checkbox_text:after {
 	content: '';
 	position: absolute;
@@ -151,19 +190,14 @@
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);	
 }
 
-.booking__checkbox_text:before {
-	content: '';
-	position: absolute;
-	top: -7px;
-	left: -2px;
-	width: 30px;
-	height: 30px;
-	background-color: transparent;  
-}
-
-.booking__checkbox_text:focus:before,
+.booking__checkbox:focus:before,
 .booking__checkbox_text:active:before {
   border: 1px solid var(--add-color);  
+}
+
+.booking__checkbox input:not(:disabled):active+label:before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
 }
 
 /* .booking__checkbox input:checked + .booking__checkbox_text:after {
@@ -380,7 +414,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
   .booking__title {
     margin-bottom: 25px;
   }
@@ -458,7 +492,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .booking {
     padding-left: 20px;
     padding-right: 20px;
@@ -498,7 +532,7 @@
 
   .block-date {    
     flex-direction: row;
-    gap: 90px;    
+    gap: 90px;
   }
 
   .booking__date_list {
@@ -528,7 +562,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .booking {
     padding: 30px 0;
   }
@@ -543,6 +577,10 @@
   .booking__entertainments_title {
     font-size: 14px;
     margin-bottom: 15px;
+  }
+
+  .booking__date_block {
+    align-items: center;
   }
 
   .booking__radio_text,
@@ -592,11 +630,14 @@
   .booking__date_email input {
     width: 280px;
   }
+
+  .booking__btn_wrapper {
+    margin: 0 auto;
+  }
   
   .booking__btn {
     width: 280px;
     font-size: 18px;
     padding: 17px 58px;
-    margin: 0 auto;
   }
 }
