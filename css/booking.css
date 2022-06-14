@@ -75,21 +75,24 @@
   row-gap: 21px;
 }
 
-.booking__entertainments_radio input {
+/* .booking__entertainments_radio input {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
 	margin: 10px 0 0 7px;
-}
+} */
 
-.booking__radio_text {
+.booking__radio_text,
+.booking__checkbox_text {
+  font-size: 22px;
+  line-height: 25px;
 	position: relative;
 	padding: 0 0 0 39px;
 	cursor: pointer;
   transition: .3s ease-in-out;
 }
 
-.booking__radio_text:before {
+/* .booking__radio_text:before {
 	content: '';
 	position: absolute;
 	top: -4px;
@@ -97,9 +100,9 @@
 	width: 29px;
 	height: 29px;
 	background-color: transparent;  
-}
+} */
 
-.booking__radio_text:after {
+/* .booking__radio_text:after {
 	content: '';
 	position: absolute;
 	top: -3px;
@@ -108,12 +111,12 @@
 	height: 27px;
 	border-radius: 50%;
 	background: hsl(0, 0%, 100%);
-}
+} */
 
 /* .booking__radio_text:focus:before,
 .booking__radio_text:active:before {
   border: 1px solid var(--add-color);  
-} */
+}
 
 .booking__entertainments_radio input[type=radio] {
   display: none;
@@ -142,10 +145,6 @@
   position: absolute;
   left: 0;
   border: 1px solid var(--add-color);
-}
-
-/* .booking__entertainments_radio input:focus + .booking__radio_text:before {
-	box-shadow: 0 0 0 1px var(--secondary-color);
 } */
 
 /* .booking__entertainments_radio input[type=radio]:checked+label:before {
@@ -155,18 +154,11 @@
 
 /* Checkboxes */
 
-.booking__checkbox input {
+/* .booking__checkbox input {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
 	margin: 10px 0 0 20px;
-}
-
-.booking__checkbox_text {
-	position: relative;
-	padding: 0 0 0 39px;
-	cursor: pointer;
-  transition: .3s ease-in-out;
 }
 
 .booking__checkbox_text:before {
@@ -190,29 +182,97 @@
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);	
 }
 
-.booking__checkbox:focus:before,
-.booking__checkbox_text:active:before {
-  border: 1px solid var(--add-color);  
+
+/* Скрываем дефолтные чекбоксы и радиокнопки*/
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
 }
 
-.booking__checkbox input:not(:disabled):active+label:before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 48px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
-/* .booking__checkbox input:checked + .booking__checkbox_text:after {
-	opacity: 1;
-} */
+/* Фоновый элемент */
 
-/* .booking__checkbox input:focus + .booking__checkbox_text:before {
-	box-shadow: inset 0 2px 3px rgba(0 ,0, 0, .2), 0 0 0 1px var(--secondary-color);
-} */
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    width: 27px;
+    height: 27px;
+    background-color: #ffffff;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+/* Добавляем индикаторы */
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* Индикатор в чекбоксе и радиокнопке */
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border: 1px solid var(--add-color);
+}
+
+/* Скрываем индикатор, когда он не выбран */
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+/* Индикатор выбран */
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+
 
 /* .booking__date {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;  
 } */
+
 
 .booking__date_title {
   display: block;
@@ -449,11 +509,6 @@
 
   .item-title {
     text-align: start;
-  }
-
-  .booking__radio_text {
-    font-size: 22px;
-    line-height: 25px;
   }
 
   .booking__date_title {

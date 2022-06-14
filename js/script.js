@@ -12,13 +12,6 @@ $(document).ready(function(){
   })
 });
 
-$(document).ready(function(){
-  $('.booking__entertainments_radio').on('click', function(){
-    $('booking__entertainments_radio').removeClass('booking__entertainments_radio-click');
-    $(this).addClass('booking__entertainments_radio-click');
-  })
-});
-
 // $('.faq__list').accordion({
 //   active: true,
 //   collapsible: true,
@@ -27,3 +20,4 @@ $(document).ready(function(){
 //     header: 'acc__accord',
 //   }
 // });
+

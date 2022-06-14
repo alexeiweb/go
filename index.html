@@ -52,7 +52,7 @@
   </header>
 
   <main class="main">
-    <section class="hero" hidden>
+    <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
           <h1 class="hero__title">GAME OVER</h1>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section class="release" id="release" hidden>
+    <section class="release" id="release">
       <div class="container">
         <h2 class="release__title title">У нас есть все для классного<br>
           отдыха с друзьями!</h2>
@@ -108,7 +108,7 @@
       </div>
     </section>
 
-    <section class="halls" id="halls" hidden>
+    <section class="halls" id="halls">
       <div class="container">
         <h2 class="halls__title title">наши залы</h2>
 
@@ -172,37 +172,37 @@
               <div class="booking__entertainments_item">
                 <h3 class="booking__entertainments_title item-title">Приставка:</h3>
     
-                <div class="booking__entertainments_wrapper">
-                  <div class="booking__entertainments_radio booking__entertainments_radio-click">
-                    <label>
-                      <input type="radio" name="console" value="Play Station">                    
-                    </label>
-  
-                    <p class="booking__radio_text">Play Station</p>
+                <div class="booking__entertainments_wrapper">                  
+                  <div class="booking__entertainments_radio">
+                    <input type="radio" name="rb" id="rb1" checked> 
+                    <label for="rb1"></label>
+
+                    <!-- <label>
+                      <input type="radio" name="rb" checked>Play Station
+                    </label> -->
+
+                    <p class="booking__radio_text">Play Station</p>                   
                   </div>
       
                   <div class="booking__entertainments_radio">
-                    <label>
-                      <input type="radio" name="console" value="Sega Mega Drive">
-                    </label>
-                    
-                    <p class="booking__radio_text">Sega Mega Drive</p>
+                    <input type="radio" name="rb" id="rb2"> 
+                    <label for="rb2"></label>
+
+                    <p class="booking__radio_text">Sega Mega Drive</p>                   
                   </div>
 
                   <div class="booking__entertainments_radio">
-                    <label>
-                      <input type="radio" name="console" value="X-box One S">
-                    </label>
+                    <input type="radio" name="rb" id="rb3"> 
+                    <label for="rb3"></label>
 
-                    <p class="booking__radio_text">X-box One S</p>
+                    <p class="booking__radio_text">X-box One S</p>                  
                   </div>
       
                   <div class="booking__entertainments_radio">
-                    <label>
-                      <input type="radio" name="console" value="Dendy">
-                    </label>
+                    <input type="radio" name="rb" id="rb4"> 
+                    <label for="rb4"></label>
 
-                    <p class="booking__radio_text">Dendy</p>
+                    <p class="booking__radio_text">Dendy</p>                    
                   </div>
                 </div>
               </div>
@@ -212,35 +212,31 @@
     
                 <div class="booking__entertainments_wrapper">
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="game" value="Jenga">
-                    </label>
-  
-                    <p class="booking__checkbox_text">Jenga</p>
+                    <input type="checkbox" id="cb1" name="game" value="Jenga" checked>
+                    <label for="cb1"></label>
+
+                    <p class="booking__checkbox_text">Jenga</p>                    
                   </div>
       
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="game" value="Monopoly">
-                    </label>
-                    
-                    <p class="booking__checkbox_text">Monopoly</p>
+                    <input type="checkbox" id="cb2" name="game" value="Monopoly">
+                    <label for="cb2"></label>
+
+                    <p class="booking__checkbox_text">Monopoly</p>                   
                   </div>
       
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="game" value="Manchkin">
-                    </label>
-  
-                    <p class="booking__checkbox_text">Манчкин</p>
+                    <input type="checkbox" id="cb3" name="game" value="Манчкин">
+                    <label for="cb3"></label>
+
+                    <p class="booking__checkbox_text">Манчкин</p>                   
                   </div>
       
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="game" value="Alias">
-                    </label>
-  
-                    <p class="booking__checkbox_text">Alias</p>
+                    <input type="checkbox" id="cb4" name="game" value="Alias">
+                    <label for="cb4"></label>
+
+                    <p class="booking__checkbox_text">Alias</p>                    
                   </div>
                 </div>
               </div>
@@ -250,19 +246,17 @@
     
                 <div class="booking__entertainments_wrapper">
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="further" value="Karaoke">
-                    </label>
-  
-                    <p class="booking__checkbox_text">Караоке</p>
+                    <input type="checkbox" id="cb5" name="further" value="Karaoke">
+                    <label for="cb5"></label>
+
+                    <p class="booking__checkbox_text">Karaoke</p>
                   </div>
       
                   <div class="booking__checkbox">
-                    <label>
-                      <input type="checkbox" name="further" value="VR">
-                    </label>
-  
-                    <p class="booking__checkbox_text">VR</p>
+                    <input type="checkbox" id="cb6" name="further" value="VR">
+                    <label for="cb6"></label>
+
+                    <p class="booking__checkbox_text">VR</p>                  
                   </div>
                 </div>
               </div>
@@ -332,7 +326,7 @@
       </div>
     </section>
 
-    <section class="about" id="about" hidden>
+    <section class="about" id="about">
       <div class="container about__container">
         <h2 class="about__title title">о нас</h2>
 
@@ -361,7 +355,7 @@
       </div>
     </section>
 
-    <section class="feedback" id="feedback" hidden>
+    <section class="feedback" id="feedback">
       <div class="container">
         <h1 class="feedback__title title">Отзывы посетителей</h1>
         
@@ -421,7 +415,7 @@
       </div>
     </section> 
     
-    <section class="faq" hidden>
+    <section class="faq">
       <div class="container">
         <h2 class="faq__title title">Частые вопросы</h2>
 
@@ -454,7 +448,7 @@
       </div>
     </section>
 
-    <!-- <section class="faq">
+    <section class="faq" hidden>
       <div class="container">
         <h2 class="faq__title title">Частые вопросы</h2>
 
@@ -505,10 +499,10 @@
           </li>          
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
 
-  <footer class="footer" hidden>
+  <footer class="footer">
     <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="contacts__title title">контакты</h2>

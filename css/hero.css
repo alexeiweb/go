@@ -39,7 +39,9 @@
 .hero__wrapper:before {
   content: "";
   position: absolute;
-  background: url("../img/hero.png") top left / contain no-repeat;
+  background-image: url("../img/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 675px;
   height: 762px;
   z-index: 2;
