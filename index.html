@@ -52,7 +52,7 @@
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero" hidden>
       <div class="container">
         <div class="hero__wrapper">
           <h1 class="hero__title">GAME OVER</h1>
@@ -63,6 +63,35 @@
             <div class="hero__block_title"></div>
     
             <div class="hero__block_desc"></div>
+          </div>
+
+          <a href="#booking" class="hero__btn">Забронировать</a>
+
+          <a href="#release" class="hero__down"></a>          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">GAME OVER</h1>
+
+          <p class="hero__subtitle">Новый формат игр и отдыха</p>
+
+          <div class="hero__blocks">
+            <div class="hero__block">
+              <p class="hero__block_title">4</p>
+    
+              <p class="hero__block_desc">Тематических зала</p>
+            </div>
+    
+            <div class="hero__block">
+              <p class="hero__block_title new">new</p>
+    
+              <p class="hero__block_desc">Новейшая аппаратура</p>
+            </div>
           </div>
 
           <a href="#booking" class="hero__btn">Забронировать</a>
@@ -570,15 +599,6 @@
         </div>
       </div>
     </section>
-  </footer> 
-  
-  <!-- Код для активации focus в браузере Safari -->
-  <script>
-    document.addEventListener('click', event => {
-      if (event.target.matches('button')) {
-          event.target.focus()
-      }
-    })
-  </script>
+  </footer>
 </body>
 </html>

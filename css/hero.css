@@ -81,7 +81,46 @@
   background-image: url("../img/down-active.svg");  
 }
 
+
+.hero__blocks {
+  display: flex;
+}
+
 .hero__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.hero__block:first-child {
+  margin-right: 40px;
+}
+
+.hero__block_title {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: var(--add-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.new {
+font-size: 75px;
+line-height: 106px;
+font-variant: small-caps;
+}
+
+.hero__block_desc {
+  max-width: 175px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 150px;
+}
+
+
+/* .hero__block {
   display: flex;
   gap: 61px;
   margin-bottom: 168px;
@@ -97,7 +136,7 @@
   width: 151px;
   height: 132px;
   background: url('../img/hero-new.png') center / contain no-repeat;
-}
+} */
 
 .hero__btn {
   position: absolute;
@@ -156,7 +195,24 @@
     margin-bottom: 30px;
   }
     
-  .hero__block {
+  .hero__block_title {
+    font-size: 80px;
+    line-height: 113px;
+    margin-bottom: 30px;
+  }
+  
+  .new {
+    font-size: 60px;
+    line-height: 85px;
+  }
+  
+  .hero__block_desc {
+    max-width: 175px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  /* .hero__block {
     margin-bottom: 80px;
   }
 
@@ -168,7 +224,7 @@
   .hero__block_desc {
     width: 124px;
     height: 110px;
-  }
+  } */
   
   .hero__btn {
     font-size: 22px;
@@ -207,8 +263,30 @@
     padding-left: 100px;    
     margin-bottom: 50px;
   }
+
+  .hero__block:first-child {
+    margin-right: 30px;
+  }
+  
+  .hero__block_title {
+    font-size: 50px;
+    line-height: 71px;
+    margin-bottom: 10px;
+  }
+  
+  .new {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  
+  .hero__block_desc {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 100px;
+    max-width: 103px;
+  }
     
-  .hero__block {
+  /* .hero__block {
     margin-bottom: 100px;
   }
 
@@ -220,7 +298,7 @@
   .hero__block_desc {
     width: 78px;
     height: 69px;
-  }
+  } */
   
   .hero__btn {
     font-size: 16px;
@@ -269,8 +347,30 @@
     left: 220px;
     top: 35px;
   }
+
+  .hero__block:first-child {
+    margin-right: 10px;
+  }
   
-  .hero__block {
+  .hero__block_title {
+    font-size: 26px;
+    line-height: 37px;
+    margin-bottom: 0;
+  }
+  
+  .new {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  
+  .hero__block_desc {
+    font-size: 10px;
+    line-height: 11px;
+    margin-bottom: 30px;
+    max-width: 65px;
+  }
+  
+  /* .hero__block {
     gap: 23px;
     margin-bottom: 30px;
     padding-left: 20px;
@@ -284,7 +384,7 @@
   .hero__block_desc {
     width: 44px;
     height: 40px;
-  }
+  } */
   
   .hero__btn {
     font-size: 10px;
