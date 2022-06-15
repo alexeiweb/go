@@ -118,7 +118,9 @@
     width: 66px;
     height: 42px;
   }
+}
 
+@media (max-width: 480px) {
   .header__btn {
     display: none;
   }
