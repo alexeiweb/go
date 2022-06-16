@@ -39,6 +39,10 @@
   transform: translateY(50px);
 }
 
+.card-audio:hover {
+  transform: scale(1.05) translateY(50px);  
+}
+
 .card-karaoke {
   background-image: url('../img/3.jpg');
 }
@@ -50,6 +54,10 @@
 .card-films {
   background-image: url('../img/5.jpg');
   transform: translateY(50px);
+}
+
+.card-films:hover {
+  transform: scale(1.05) translateY(50px);  
 }
 
 .card-playstation {

@@ -16,6 +16,10 @@
   margin-bottom: 20px;  
 }
 
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
 .faq__btn,
 .faq__btn_purple {
   background-color: transparent;

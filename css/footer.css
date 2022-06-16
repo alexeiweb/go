@@ -43,6 +43,16 @@
   margin-right: 28px;
 }
 
+.contacts__phone_contact:hover {
+  color: var(--add-color);
+  transition: .3s ease-in-out;
+}
+
+.contacts__email_contact:hover {
+  color: var(--add-color);
+  transition: .3s ease-in-out;
+}
+
 .contacts__social {
   display: flex;
   gap: 26px;
@@ -76,6 +86,12 @@
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+}
+
+.contacts__author span:hover {
+  color: var(--add-color);
+  transition: .3s ease-in-out;
+  cursor: pointer;
 }
 
 
