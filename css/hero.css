@@ -192,24 +192,25 @@ font-variant: small-caps;
     font-size: 22px;
     line-height: 30px;
     padding-left: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
     
   .hero__block_title {
     font-size: 80px;
-    line-height: 113px;
-    margin-bottom: 30px;
+    line-height: 70px;
+    margin-bottom: 15px;
   }
   
   .new {
     font-size: 60px;
-    line-height: 85px;
+    line-height: 55px;
   }
   
   .hero__block_desc {
     max-width: 175px;
     font-size: 26px;
     line-height: 30px;
+    margin-bottom: 80px;
   }
 
   /* .hero__block {

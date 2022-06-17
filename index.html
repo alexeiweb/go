@@ -166,7 +166,7 @@
         <form action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="booking__title title">Забронировать зал просто</h2>
   
-          <div class="booking__hall">
+          <fieldset class="booking__hall">
             <h3 class="booking__hall_title block-title">Выбери зал</h3>
             <div class="booking__hall_radios">
               <div class="booking__hall_radio booking__hall_radio-click">
@@ -193,22 +193,18 @@
                 </label>
               </div>
             </div>
-          </div>
+          </fieldset>
           
-          <div class="booking__entertaiments">
+          <fieldset class="booking__entertaiments">
             <h3 class="booking__entertainments_title block-title">Собери набор развлечений</h3>
             <div class="booking__entertainments_list">
-              <div class="booking__entertainments_item">
+              <fieldset class="booking__entertainments_item">
                 <h3 class="booking__entertainments_title item-title">Приставка:</h3>
     
                 <div class="booking__entertainments_wrapper">                  
                   <div class="booking__entertainments_radio">
                     <input type="radio" name="rb" id="rb1" checked> 
                     <label for="rb1">Play Station</label>
-
-                    <!-- <label>
-                      <input type="radio" name="rb" checked>Play Station
-                    </label> -->
                   </div>
       
                   <div class="booking__entertainments_radio">
@@ -226,9 +222,9 @@
                     <label for="rb4">Dendy</label>                   
                   </div>
                 </div>
-              </div>
+              </fieldset>
     
-              <div class="booking__entertainments_item">
+              <fieldset class="booking__entertainments_item">
                 <h3 class="booking__entertainments_title">Настольные игры</h3>
     
                 <div class="booking__entertainments_wrapper">
@@ -252,9 +248,9 @@
                     <label for="cb4">Alias</label>                   
                   </div>
                 </div>
-              </div>
+              </fieldset>
     
-              <div class="booking__entertainments_item">
+              <fieldset class="booking__entertainments_item">
                 <h3 class="booking__entertainments_title">Дополнительно</h3>
     
                 <div class="booking__entertainments_wrapper">
@@ -268,9 +264,9 @@
                     <label for="cb6">VR</label>                 
                   </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
-          </div>
+          </fieldset>
 
           <div class="booking__date">
             <h3 class="booking__date_title block-title">Выбери дату и время</h3>
@@ -300,13 +296,13 @@
     
               <div class="booking__date_block">
                 <div class="booking__date_name">
-                  <label>
+                  <label>Имя<br>
                     <input type="text" name="name">
                   </label>
                 </div>
       
                 <div class="booking__date_second-name">
-                  <label>
+                  <label>Фамилия<br>
                     <input type="text" name="second name">
                   </label>
                 </div>
@@ -314,13 +310,13 @@
     
               <div class="booking__date_block">
                 <div class="booking__date_phone">
-                  <label>
+                  <label>Телефон<br>
                     <input type="tel" name="phone">
                   </label>
                 </div>
       
                 <div class="booking__date_email">
-                  <label>
+                  <label>E-mail<br>
                     <input type="email" name="email">
                   </label>
                 </div>

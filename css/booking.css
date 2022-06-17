@@ -196,7 +196,7 @@ input[type="radio"]:checked + label:after {
 .booking__date_block {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 50px;  
 }
 
 .booking__date_item,
@@ -268,9 +268,11 @@ input[type="radio"]:checked + label:after {
 .booking__date_second-name,
 .booking__date_phone,
 .booking__date_email {
+  height: 53px;
   position: relative;
   font-weight: 700;
   font-size: 14px;
+  transform: translateY(-16px);
 }
 
 .booking__date_name input {
@@ -313,33 +315,33 @@ input[type="radio"]:checked + label:after {
   outline: none;  
 }
 
-.booking__date_name:before {
+/* .booking__date_name:before {
   content: "Имя";
   position: absolute;
   left: 0;
   top: -17px;
-}
+} */
 
-.booking__date_second-name:before {
+/* .booking__date_second-name:before {
   content: "Фамилия";
   position: absolute;
   left: 0;
   top: -17px;
-}
+} */
 
-.booking__date_phone:before {
+/* .booking__date_phone:before {
   content: "Телефон";
   position: absolute;
   left: 0;
   top: -17px;
-}
+} */
 
-.booking__date_email:before {
+/* .booking__date_email:before {
   content: "E-mail";
   position: absolute;
   left: 0;
   top: -17px;
-}
+} */
 
 .booking__btn_wrapper {
   margin-left: auto;
