@@ -1,0 +1,53 @@
+.modal {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 145px;
+    width: 600px;
+    height: 498px;
+    background-color: var(--bg-color);
+    z-index: 3;
+    margin-left: -300px;
+  }
+
+  .modal__title {
+    padding-top: 60px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  .modal__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__date input{
+    width: 280px;
+    height: 52px;
+    margin-bottom: 40px;
+  }
+
+  .modal__date label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .modal__btn {    
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--main-color);
+    padding: 16px 52px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }
+}

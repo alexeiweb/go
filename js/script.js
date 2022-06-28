@@ -29,3 +29,10 @@ $(document).ready(function(){
 //   }
 // });
 
+
+/* Модальное окно */
+
+const modalBtn = $('.header__btn');
+modalBtn.click(function() {
+  $('.modal').show();
+});
