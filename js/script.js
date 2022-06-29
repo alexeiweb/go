@@ -33,6 +33,13 @@ $(document).ready(function(){
 /* Модальное окно */
 
 const modalBtn = $('.header__btn');
+const modalClose = $('.modal__close');
+
 modalBtn.click(function() {
   $('.modal').show();
+});
+console.log(modalBtn);
+
+modalBtn.click(function() {
+  $('.modal').hide();
 });
