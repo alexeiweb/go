@@ -20,6 +20,9 @@ $(document).ready(function(){
   })
 });
 
+
+/* Аккордеон */
+
 // $('.faq__list').accordion({
 //   active: true,
 //   collapsible: true,
@@ -32,14 +35,24 @@ $(document).ready(function(){
 
 /* Модальное окно */
 
+const modal = $('.modal');
 const modalBtn = $('.header__btn');
-const modalClose = $('.modal__close');
+const modalClose = $('.modal-close');
+const modalContent = $(".modal__content");
 
-modalBtn.click(function() {
-  $('.modal').show();
+modalBtn.click(function() {  
+  modal.addClass('modal-active');
 });
-console.log(modalBtn);
 
-modalBtn.click(function() {
-  $('.modal').hide();
+modalClose.click(function() {
+  modal.removeClass('modal-active');
+});
+
+/* Закрытие модального окна при клике вне его контентной области */
+
+modal.click(function (e) {    
+    if (!modalContent.is(e.target) && modalContent.has(e.target).length === 0) {
+      modal.removeClass('modal-active');
+      //$(this).removeClass('modal-active'); // можно написать так
+    }
 });

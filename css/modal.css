@@ -1,5 +1,8 @@
 .modal {
-  display: block;
+  visibility: hidden;
+}
+
+.modal-active {
   position: absolute;
   left: 50%;
   top: 145px;
@@ -8,9 +11,12 @@
   background-color: var(--bg-color);
   z-index: 3;
   margin-left: -300px;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
 }
 
-.modal__close {
+.modal-close {
   background-image: url(../img/close.png);
   width: 42px;
   height: 42px;
