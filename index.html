@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cc0e32e4-b5fd-4f9c-ac1a-c006f40f1428&lang=ru_RU" type="text/javascript">
+  </script>
+
   <script defer src="js/swiper-bundle.min.js"></script>
   <script defer src="js/jquery-3.6.0.min.js"></script>
   <script defer src="js/jquery-ui.min.js"></script>
@@ -420,40 +423,40 @@
       </div>
     </section> 
     
-    <section class="faq">
+    <section class="faq" hidden>
       <div class="container">
         <h2 class="faq__title title">Частые вопросы</h2>
 
         <ul class="faq__list">
           <li class="faq__item">Можно ли забронировать комнату онлайн
 
-            <button class="faq__btn"></button>
+            <h3 class="faq__btn"></h3>
           </li>
 
           <li class="faq__item"> Могут ли мне вернуть деньги за бронь
 
-            <button class="faq__btn faq__btn_purple"></button>
+            <h3 class="faq__btn faq__btn_purple"></h3>
           </li>
 
           <li class="faq__item"> Какая комната самая популярная
 
-            <button class="faq__btn"></button>
+            <h3 class="faq__btn"></h3>
           </li>
 
           <li class="faq__item"> Как получить VIP карту
 
-            <button class="faq__btn faq__btn_purple"></button>
+            <h3 class="faq__btn faq__btn_purple"></h3>
           </li>
           
           <li class="faq__item"> Какая комната самая популярная
 
-            <button class="faq__btn"></button>
+            <h3 class="faq__btn"></h3>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="faq" hidden>
+    <section class="faq">
       <div class="container">
         <h2 class="faq__title title">Частые вопросы</h2>
 
@@ -563,9 +566,7 @@
             </ul> 
           </div>
           
-          <div class="contacts__map">
-            <img src="img/map.jpg" alt="">
-          </div>
+          <div class="contacts__map" id="map" style="width: 680px; height: 274px"></div>
         </div>
 
         <div class="contacts__copyright">

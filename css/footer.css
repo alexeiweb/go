@@ -187,7 +187,9 @@
   }
   
   .contacts__map {
-    max-width: 688px;
+    width: 280px;
+    height: 194px;
+    /* max-width: 688px; */
     margin-bottom: 63px;
   }
 }
