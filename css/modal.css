@@ -62,3 +62,16 @@
   display: block;
   margin: 0 auto;
 }
+
+.overlay {
+  z-index: 2;
+  position: fixed;
+  background-color: #1B1A1B;
+  opacity: 0.7;
+  width: 100vw;
+	height: 100vh;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* display: none; */
+}

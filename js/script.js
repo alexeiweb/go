@@ -38,21 +38,28 @@ $(document).ready(function(){
 const modal = $('.modal');
 const modalBtn = $('.header__btn');
 const modalClose = $('.modal-close');
-const modalContent = $(".modal__content");
+const modalContent = $('.modal__content');
+const modalOverlay = $('.modal>.container');
 
 modalBtn.click(function() {  
-  modal.addClass('modal-active');
+  modal.toggleClass('modal-active'),
+  modalOverlay.toggleClass('overlay');
+});
+
+modalOverlay.click(function() {  
+  modal.removeClass('modal-active');
+  modalOverlay.removeClass('overlay');
 });
 
 modalClose.click(function() {
   modal.removeClass('modal-active');
+  modalOverlay.removeClass('overlay');
 });
 
 /* Закрытие модального окна при клике вне его контентной области */
 
-modal.click(function (e) {    
-    if (!modalContent.is(e.target) && modalContent.has(e.target).length === 0) {
-      modal.removeClass('modal-active');
-      //$(this).removeClass('modal-active'); // можно написать так
-    }
-});
+// modal.click(function (event) {    
+//     if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
+//       $(this).removeClass('modal-active'); // событие вызвал элемент modal
+//     }
+// });
