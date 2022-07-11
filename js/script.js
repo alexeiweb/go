@@ -63,21 +63,21 @@ const modal = $('.modal');
 const modalBtn = $('.header__btn');
 const modalClose = $('.modal-close');
 const modalContent = $('.modal__content');
-const modalOverlay = $('.modal>.container');
+
 
 modalBtn.click(function() {  
-  modal.toggleClass('modal-active'),
-  modalOverlay.toggleClass('overlay');
+  modal.toggleClass('modal-active');
+  
 });
 
 modalOverlay.click(function() {  
   modal.removeClass('modal-active');
-  modalOverlay.removeClass('overlay');
+  
 });
 
 modalClose.click(function() {
   modal.removeClass('modal-active');
-  modalOverlay.removeClass('overlay');
+  
 });
 
 /* Закрытие модального окна при клике вне его контентной области */
