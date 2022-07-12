@@ -1,6 +1,6 @@
 .faq__item {
-  position: relative; 
-  cursor: pointer;  
+  /* position: relative;  */
+  /* cursor: pointer;   */
   font-size: 24px;
   line-height: 28px;
   background-color: hsl(0, 0%, 100%);
@@ -31,11 +31,14 @@
   display: flex;
   background-image: url("../img/open-purple.svg");
   background-repeat: no-repeat;
+  background-position-x: 715px;
+  cursor: pointer;
 }
 
 .faq__btn_purple {
   background-image: url("../img/open.svg");
   background-repeat: no-repeat;
+  background-position-x: 715px;
 }
 
 .faq__accord {
@@ -45,32 +48,21 @@
   transition: transform .5s ease;
 }
 
-
-
-
-/* 
-.faq__btn_purple {
-  background-color: transparent;
-  border: none;
-  width: 46px;
-  height: 46px;  
-  transition: .3s ease-in-out;
-} */
-
 .faq__btn:hover .faq__accord {
   background-image: url("../img/open-purple-hover.svg");
 }
 
 .faq__item_title:active .faq__accord {
-  background-image: url("../img/close-purple.svg");  
+  background-image: url("../img/close-purple.svg");
 }
 
 .faq__btn_purple:hover .faq__accord {
   background-image: url("../img/open-hover.svg");
+  background-position-x: 715px;
 }
 
 .faq__btn_purple:active .faq__accord {
-  background-image: url("../img/close.svg");  
+  background-image: url("../img/close.svg");
 }
 
 
