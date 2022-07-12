@@ -53,7 +53,6 @@ ymaps.ready(init);
               hintContent: 'Интересное место'
             });
             kremMap.geoObjects.add(marker);
-
         };
 
 
@@ -63,27 +62,28 @@ const modal = $('.modal');
 const modalBtn = $('.header__btn');
 const modalClose = $('.modal-close');
 const modalContent = $('.modal__content');
-
+const modalOverlay = $('.overlay');
 
 modalBtn.click(function() {  
   modal.toggleClass('modal-active');
-  
+  modalOverlay.addClass('overlay-active');
 });
 
 modalOverlay.click(function() {  
   modal.removeClass('modal-active');
-  
+  modalOverlay.removeClass('overlay-active');
 });
 
 modalClose.click(function() {
   modal.removeClass('modal-active');
-  
+  modalOverlay.removeClass('overlay-active');
 });
 
 /* Закрытие модального окна при клике вне его контентной области */
 
-// modal.click(function (event) {    
-//     if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
-//       $(this).removeClass('modal-active'); // событие вызвал элемент modal
-//     }
-// });
+modal.click(function (event) {    
+    if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
+      $(this).removeClass('modal-active'); // событие вызвал элемент modal
+      modalOverlay.removeClass('overlay-active');
+    }
+});

@@ -5,15 +5,15 @@
 .modal-active {
   position: absolute;
   left: 50%;
-  top: 145px;
+  top: 7%;
   width: 600px;
   height: 498px;
   background-color: var(--bg-color);
   z-index: 999;
-  margin-left: -300px;
   visibility: visible;
   opacity: 1;
   transition: .3s;
+  transform: translate(-50%, -50%); /* центрируем модальное окно +left и top */
 }
 
 .modal-close {
@@ -73,4 +73,37 @@
   top: 0;
   left: 0;
   display: none;
+}
+
+.overlay-active {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .modal-active {
+    width: 280px;   
+    top: 5%; 
+  }
+
+  .modal-close {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+  
+  .modal__date input{
+    width: 220px;
+    height: 42px;
+    margin-bottom: 50px;
+  }
+
+  .modal__btn {
+    font-size: 18px;
+    padding: 12px 40px;
+  }
 }
