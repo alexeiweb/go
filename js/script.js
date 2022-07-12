@@ -69,15 +69,24 @@ modalBtn.click(function() {
   modalOverlay.addClass('overlay-active');
 });
 
-modalOverlay.click(function() {  
+const closeModal = function() {
   modal.removeClass('modal-active');
-  modalOverlay.removeClass('overlay-active');
-});
+  modalOverlay.removeClass('overlay-active');  
+};
 
-modalClose.click(function() {
-  modal.removeClass('modal-active');
-  modalOverlay.removeClass('overlay-active');
-});
+modalOverlay.click(closeModal);
+modalClose.click(closeModal);
+
+
+// modalOverlay.click(function() {  
+//   modal.removeClass('modal-active');
+//   modalOverlay.removeClass('overlay-active');
+// });
+
+// modalClose.click(function() {
+//   modal.removeClass('modal-active');
+//   modalOverlay.removeClass('overlay-active');
+// });
 
 /* Закрытие модального окна при клике вне его контентной области */
 

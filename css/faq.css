@@ -31,14 +31,14 @@
   display: flex;
   background-image: url("../img/open-purple.svg");
   background-repeat: no-repeat;
-  background-position-x: 715px;
+  background-position-x: right;
   cursor: pointer;
 }
 
 .faq__btn_purple {
   background-image: url("../img/open.svg");
   background-repeat: no-repeat;
-  background-position-x: 715px;
+  background-position-x: right;
 }
 
 .faq__accord {
@@ -58,7 +58,7 @@
 
 .faq__btn_purple:hover .faq__accord {
   background-image: url("../img/open-hover.svg");
-  background-position-x: 715px;
+  background-position-x: right;
 }
 
 .faq__btn_purple:active .faq__accord {

@@ -72,8 +72,6 @@
 
 .hero__down:focus {
   background-image: url("../img/down-focus.svg");
-  width: 67px;
-  height: 67px;
   border: 1px solid var(--add-color);
 }
 
