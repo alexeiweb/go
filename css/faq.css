@@ -35,31 +35,28 @@
 
 .faq__btn_purple {
   background-image: url("../img/open.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
 }
 
-.faq__accord {
+/* .faq__accord {
   display: block;
   min-width: 46px;
   height: 46px;
   transition: transform .5s ease;
+} */
+
+.faq__btn:hover {
+  background-image: url("../img/open-purple-hover.svg");  
 }
 
-.faq__btn:hover .faq__accord {
-  background-image: url("../img/open-purple-hover.svg");
-}
-
-.faq__item_title:active .faq__accord {
+.faq__item_title:active {
   background-image: url("../img/close-purple.svg");
 }
 
-.faq__btn_purple:hover .faq__accord {
-  background-image: url("../img/open-hover.svg");
-  background-position-x: right;
+.faq__btn_purple:hover {
+  background-image: url("../img/open-hover.svg");  
 }
 
-.faq__btn_purple:active .faq__accord {
+.faq__btn_purple:active {
   background-image: url("../img/close.svg");
 }
 
