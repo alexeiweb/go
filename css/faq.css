@@ -27,8 +27,7 @@
 
 .faq__btn {
   display: flex;
-  background-image: url("../img/open-purple.svg");
-  background-repeat: no-repeat;
+  background: url("../img/open-purple.svg") no-repeat;
   background-position-x: right;
   cursor: pointer;
 }
@@ -48,7 +47,7 @@
   background-image: url("../img/open-purple-hover.svg");  
 }
 
-.faq__btn:active {
+.ui-accordion-header-active {
   background: url("../img/close-purple.svg") no-repeat;  
   background-position-x: right;
 }
@@ -57,7 +56,7 @@
   background-image: url("../img/open-hover.svg");  
 }
 
-.faq__btn_purple:active {
+.ui-accordion-header-active:nth-child(2n) {
   background: url("../img/close.svg") no-repeat;
   background-position-x: right;
 }
