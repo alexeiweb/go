@@ -48,8 +48,9 @@
   background-image: url("../img/open-purple-hover.svg");  
 }
 
-.faq__item_title:active {
-  background-image: url("../img/close-purple.svg");
+.faq__btn:active {
+  background: url("../img/close-purple.svg") no-repeat;  
+  background-position-x: right;
 }
 
 .faq__btn_purple:hover {
@@ -57,7 +58,8 @@
 }
 
 .faq__btn_purple:active {
-  background-image: url("../img/close.svg");
+  background: url("../img/close.svg") no-repeat;
+  background-position-x: right;
 }
 
 
