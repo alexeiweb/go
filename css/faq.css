@@ -36,13 +36,6 @@
   background-image: url("../img/open.svg");
 }
 
-/* .faq__accord {
-  display: block;
-  min-width: 46px;
-  height: 46px;
-  transition: transform .5s ease;
-} */
-
 .faq__btn:hover {
   background-image: url("../img/open-purple-hover.svg");  
 }
@@ -56,7 +49,7 @@
   background-image: url("../img/open-hover.svg");  
 }
 
-.ui-accordion-header-active:nth-child(2n) {
+.faq__item:nth-child(2n) .ui-accordion-header-active {
   background: url("../img/close.svg") no-repeat;
   background-position-x: right;
 }
@@ -89,52 +82,3 @@
     line-height: 16px;
   }
 }
-
-
-/*
-.faq__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 4%, 11%);
-  font-weight: 700;
-  font-size: 24px;
-  padding: 30px 70px;
-  margin-bottom: 20px;  
-}
-
-.faq__btn,
-.faq__btn_purple {
-  background-color: transparent;
-  border: none;
-  width: 46px;
-  height: 46px;  
-  transition: .3s ease-in-out;
-}
-
-.faq__btn {
-  background-image: url("../img/open-purple.svg");
-}
-
-.faq__btn_purple {
-  background-image: url("../img/open.svg");
-}
-
-
-.faq__btn:hover .acc__accord {
-  background-image: url("../img/open-purple-hover.svg");
-}
-
-.faq__btn:active .acc__accord {
-  background-image: url("../img/close-purple.svg");  
-}
-
-.faq__btn_purple:hover .acc__accord {
-  background-image: url("../img/open-hover.svg");
-}
-
-.faq__btn_purple:active .acc__accord {
-  background-image: url("../img/close.svg");  
-} */
