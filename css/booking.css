@@ -168,12 +168,6 @@ input[type="radio"]:checked + label:after {
     opacity: 1;
 }
 
-/* .booking__date {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;  
-} */
-
 .booking__date_title {
   display: block;
   text-align: center;
@@ -186,11 +180,6 @@ input[type="radio"]:checked + label:after {
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
-  /* display: grid;
-  grid-template-columns: 300px minmax(251px, 280px) minmax(254px, 300px);
-  grid-template-rows: 52px 52px 64px;
-  gap: 50px 36px;
-  justify-content: center; */
 }
 
 .booking__date_block {
@@ -275,73 +264,23 @@ input[type="radio"]:checked + label:after {
   transform: translateY(-16px);
 }
 
-.booking__date_name input {
+.booking__date_name input,
+.booking__date_second-name input,
+.booking__date_phone input,
+.booking__date_email input {
+  padding-left: 20px;
+  font-size: 20px;
   width: 280px;
   height: 52px;  
 }
 
-.booking__date_name input:focus {  
-  border: 3px solid var(--secondary-color);
-  outline: none;  
-}
-
-.booking__date_second-name input {
-  width: 280px;
-  height: 52px;
-}
-
-.booking__date_second-name input:focus {  
-  border: 3px solid var(--secondary-color);
-  outline: none;  
-}
-
-.booking__date_phone input {
-  width: 300px;
-  height: 52px;
-}
-
-.booking__date_phone input:focus {  
-  border: 3px solid var(--secondary-color);
-  outline: none;  
-}
-
-.booking__date_email input {
-  width: 300px;
-  height: 52px;
-}
-
+.booking__date_name input:focus,
+.booking__date_second-name input:focus,
+.booking__date_phone input:focus,
 .booking__date_email input:focus {  
   border: 3px solid var(--secondary-color);
   outline: none;  
 }
-
-/* .booking__date_name:before {
-  content: "Имя";
-  position: absolute;
-  left: 0;
-  top: -17px;
-} */
-
-/* .booking__date_second-name:before {
-  content: "Фамилия";
-  position: absolute;
-  left: 0;
-  top: -17px;
-} */
-
-/* .booking__date_phone:before {
-  content: "Телефон";
-  position: absolute;
-  left: 0;
-  top: -17px;
-} */
-
-/* .booking__date_email:before {
-  content: "E-mail";
-  position: absolute;
-  left: 0;
-  top: -17px;
-} */
 
 .booking__btn_wrapper {
   margin-left: auto;
@@ -432,20 +371,11 @@ input[type="radio"]:checked + label:after {
     padding: 13px 45px;
   }
   
-  .booking__date_name input {
-    width: 250px; 
-  }
-
-  .booking__date_second-name input {
-    width: 250px;
-  }
-
-  .booking__date_phone input {
-    width: 250px;
-  }
-
+  .booking__date_name input,
+  .booking__date_second-name input,
+  .booking__date_phone input,
   .booking__date_email input {
-    width: 250px;
+    width: 250px; 
   }
 }
 
@@ -596,5 +526,14 @@ input[type="radio"]:checked + label:after {
     width: 280px;
     font-size: 18px;
     padding: 17px 58px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking__date_name input,
+  .booking__date_second-name input,
+  .booking__date_phone input,
+  .booking__date_email input {
+    font-size: 14px;
   }
 }

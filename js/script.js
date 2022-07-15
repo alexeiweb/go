@@ -95,7 +95,7 @@ modal.click(function (event) {
 
 modalForm.submit(function (event) {
   event.preventDefault();
-  $.ajax({
+  $.ajax( {
     url: 'https://jsonplaceholder.typicode.com/posts',
     type: 'POST',
     data: $(this).serialize(),
@@ -108,3 +108,27 @@ modalForm.submit(function (event) {
     }
   })
 });
+
+
+/* Отправка формы booking */
+
+$('.booking__form').submit(function (event) {
+  event.preventDefault();
+  $.ajax( {
+    url: 'https://jsonplaceholder.typicode.com/posts',
+    type: 'POST',
+    data: $(this).serialize(),
+  })
+})
+
+
+/* Burger */
+
+$('.burger').on('click', function() {
+  $('.header__nav').animate( {
+    left: 0,
+  }, 500, function() {
+
+  }); 
+})
+
