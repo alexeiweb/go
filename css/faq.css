@@ -40,7 +40,7 @@
   background-image: url("../img/open-purple-hover.svg");  
 }
 
-.ui-accordion-header-active {
+.faq__item .ui-accordion-header-active {
   background: url("../img/close-purple.svg") no-repeat;  
   background-position-x: right;
 }

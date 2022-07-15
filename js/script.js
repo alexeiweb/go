@@ -43,17 +43,18 @@ $('.faq__list').accordion({
 /* Яндекс-карты */
 
 ymaps.ready(init);
-        function init(){
-            const kremMap = new ymaps.Map("map", {
-                center: [55.752209, 37.618829],
-                zoom: 15
-            });
+  function init() {
+    const kremMap = new ymaps.Map("map", {
+      center: [55.723151, 37.565021],
+      zoom: 15
+    });
 
-            const marker = new ymaps.Placemark([55.752209, 37.618829], {
-              hintContent: 'Интересное место'
-            });
-            kremMap.geoObjects.add(marker);
-        };
+    const marker = new ymaps.Placemark([55.723151, 37.565021], {
+      hintContent: 'Интересное место'
+    });
+
+      kremMap.geoObjects.add(marker);
+  };
 
 
 /* Модальное окно */
@@ -63,6 +64,8 @@ const modalBtn = $('.header__btn');
 const modalClose = $('.modal-close');
 const modalContent = $('.modal__content');
 const modalOverlay = $('.overlay');
+const modalTitle = $('.modal__title');
+const modalForm = $('.modal__form');
 
 modalBtn.click(function() {  
   modal.toggleClass('modal-active');
@@ -78,16 +81,6 @@ modalOverlay.click(closeModal);
 modalClose.click(closeModal);
 
 
-// modalOverlay.click(function() {  
-//   modal.removeClass('modal-active');
-//   modalOverlay.removeClass('overlay-active');
-// });
-
-// modalClose.click(function() {
-//   modal.removeClass('modal-active');
-//   modalOverlay.removeClass('overlay-active');
-// });
-
 /* Закрытие модального окна при клике вне его контентной области */
 
 modal.click(function (event) {    
@@ -95,4 +88,23 @@ modal.click(function (event) {
       $(this).removeClass('modal-active'); // событие вызвал элемент modal
       modalOverlay.removeClass('overlay-active');
     }
+});
+
+
+/* Отправка формы */
+
+modalForm.submit(function (event) {
+  event.preventDefault();
+  $.ajax({
+    url: 'https://jsonplaceholder.typicode.com/posts',
+    type: 'POST',
+    data: $(this).serialize(),
+    success(data) {
+      modalTitle.text('Спасибо, ожидайте звонок')
+      modalForm.slideUp(300);
+    },
+    error() {
+      modalTitle.text('Косячок')
+    }
+  })
 });
