@@ -119,34 +119,14 @@ $('.booking__form').submit(function (event) {
     type: 'POST',
     data: $(this).serialize(),
   })
-})
+});
 
 
 /* Burger */
 
 const burger = document.querySelector('.burger');
-const navigation = document.querySelector('.header__list').cloneNode(1);
 const popup = document.querySelector('.popup');
-const headerLink = document.querySelector('.header__link');
 
-burger.addEventListener('click', burgerClick);
-
-function burgerClick(event) {
-  event.preventDefault();
-  burger.classList.remove('burger');
-  navigation.classList.add('active');
+burger.addEventListener('click', function() {
   popup.classList.add('active');
-  renderPopup();
-};
-
-headerLink.addEventListener('click', headerLinkClick);
-
-function headerLinkClick(event) {  
-  event.preventDefault();  
-  popup.classList.remove('active');  
-  navigation.classList.remove('active');
-}
-
-function renderPopup() {
-  popup.appendChild(navigation);
-}
+});
