@@ -124,9 +124,11 @@ $('.booking__form').submit(function (event) {
 
 /* Burger */
 
-const burger = document.querySelector('.burger');
+const burger = document.querySelector('.header__burger');
 const popup = document.querySelector('.popup');
+const headerNav = document.querySelector('.header__navigation');
 
 burger.addEventListener('click', function() {
   popup.classList.add('active');
+  headerNav.classList.add('active');
 });

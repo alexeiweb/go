@@ -9,7 +9,61 @@
   justify-content: space-between;  
 }
 
-.header__list {
+.header__burger {
+  display: none;   
+}
+
+.header__burger:hover {
+  color: var(--add-color);
+}
+
+/* .header__burger:focus {
+  background-image: url('../img/burger-focus.png');
+  width: 39px;
+  height: 39px;
+}
+
+.header__burger:active {
+  background-image: url('../img/burger-active.png');  
+} */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1B1A1B;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.popup.active {
+  left: 0;
+}
+
+.header__navigation.active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  gap: 39px;
+  padding-top: 58px;
+  z-index: 100;
+  transform: translate(0);  
+}
+
+.popup.active .navigation__link:hover {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+.navigation__list {
   display: flex;
   column-gap: 40px;
   font-size: 22px;
@@ -17,16 +71,16 @@
   text-transform: uppercase;
 }
 
-.header__link {
+.navigation__link {
   transition: .3s ease-in-out;
 }
 
-.header__link:hover {
+.navigation__link:hover {
   color: var(--main-color);
 }
 
-.header__link:focus,
-.header__link:active {
+.navigation__link:focus,
+.navigation__link:active {
   color: var(--secondary-color);
 }
 
@@ -61,7 +115,7 @@
     height: 55px;
   }
 
-  .header__list {
+  .navigation__list {
     font-size: 18px;
     line-height: 22px;
     gap: 20px;
@@ -75,8 +129,21 @@
 }
 
 @media (max-width: 1023px) {
-  .header__list {
-    display: none;
+  .header__burger {
+    display: block;
+    line-height: 0;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+    border: none;
+    color: var(--main-color);
+  }
+
+  .header__navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(-100%);
   }
 }
 
@@ -90,5 +157,25 @@
 @media (max-width: 480px) {
   .header__btn {
     display: none;
+  }
+
+  .popup .navigation__list {
+    font-size: 14px;
+    gap: 26px;
+  }
+
+  .header__burger span {
+    width: 39px;
+    height: 4px;
+  }
+
+  .header__burger span:nth-of-type(2) {
+    top: calc(50% - 8px);
+  }
+
+  .header__burger span:nth-of-type(3) {        
+    top: calc(50% + 8px);
+    left: calc(50% - 8px);  
+    width: 22px;
   }
 }
