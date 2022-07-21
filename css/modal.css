@@ -1,59 +1,71 @@
-.modal {
+.modal {  
+  max-width: 600px;
+  width: 100%;
+  margin: 30px 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default; /* убирает курсор в модальном окне */
+  text-align: left;
+  white-space: normal;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.36s ease-in-out visibility 0.36s ease-in-out;
 }
 
-.modal-active {
-  position: absolute;
-  left: 50%;
-  top: 7%;
-  width: 600px;
-  background-color: var(--bg-color);
-  z-index: 999;
+.modal_active {
   visibility: visible;
   opacity: 1;
-  transition: .3s;
-  transform: translate(-50%, -50%);
 }
 
-.modal-close {
-  background-image: url(../img/close.png);
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  border: none;
-  background-color: transparent;
-}
-
-.modal__content {
-  padding: 60px 0 80px 0;
+.modal__container {
+  position: relative;
+  padding: 60px 150px 80px;
+  background-color: var(--bg-color);
 }
 
 .modal__title {
   font-size: 22px;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px; /* 40px - margin-bottom */
 }
 
-.modal__date {
+.modal__data {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.modal__date input{
-  width: 280px;
-  height: 52px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
   margin-bottom: 40px;
 }
 
-.modal__date label {
+.modal__label {
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 40px;
 }
 
-.modal__btn {    
+.modal__label:last-child {
+  margin-bottom: 0;
+}
+
+.modal__input {  
+  display: block;
+  width: 280px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #000;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.modal__btn {  
+  display: block;
+  max-width: 300px;
+  width: 100%;
   font-weight: 700;
   font-size: 22px;
   color: var(--main-color);
@@ -61,47 +73,81 @@
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
+  margin: 0 auto;  
+  box-shadow: 0px 0px 25px 1px rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(255, 255, 255, 0.65);  
 }
 
-.overlay {
-  z-index: 99;
+.modal__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;  
+  border: none;
+  background-color: transparent;
+  line-height: 0; /* чтобы убрать у SVG отступ снизу */
+  color: inherit;
+}
+
+.overlay {  
   position: fixed;
-  background-color: #1B1A1B;
-  opacity: 0.7;
-  width: 100vw;
-	height: 100vh;
-  top: 0;
-  left: 0;
-  display: none;
+  inset: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow-y: auto; /* чтобы повертикали, прои необходимости появлялась полоса прокрутки */
+  overflow-x: hidden; /* чтобы по горизонтали не появлялась полоса прокрутки */
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: .36s;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap; /* Чтобы не переносились inline блоки */
+  text-align: center; /* позиционирует контент по центру */  
 }
 
-.overlay-active {
-  display: block;
+.overlay:after { /* с помощью данной конструкции элемент модального окна будет позиционироваться ровно по центру */
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
+
+.overlay_active {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 @media (max-width: 767px) {
-  .modal-active {
-    width: 280px;   
-    top: 5%; 
+  .modal {
+    max-width: 280px;
   }
 
-  .modal-close {
-    width: 30px;
-    height: 30px;
-    background-position: center;
-    background-size: cover;
+  .modal__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
+  
   .modal__title {
     font-size: 20px;
   }
-  
-  .modal__date input{
+
+  .modal__input {
     width: 220px;
     height: 42px;
-    margin-bottom: 50px;
+  }
+
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 3px;
+  }
+
+  .modal__close svg {
+    width: 30px;
+    height: 30px;
   }
 
   .modal__btn {

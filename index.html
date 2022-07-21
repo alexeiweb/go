@@ -25,13 +25,12 @@
             <rect width="54" height="5" rx="2"/>
             <rect y="12" width="54" height="5" rx="2"/>
             <rect y="24" width="31" height="5" rx="2"/>
-          </svg>
-            
+          </svg>            
         </button>
         
         <img class="header__logo" src="img/logo.svg" width="120" height="66" alt="Логотип Game Over">
 
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#halls">Залы</a>
@@ -557,30 +556,59 @@
     </section>
   </footer>
 
-  <div class="modal">
-    <div class="container">
-      <div class="modal__content">
-        <button class="modal-close"></button>
+  <div class="overlay overlay_active">
+    <div class="modal" style="display: none;">
+      <div class="container">
+        <div class="modal__content">
+          <button class="modal-close"></button>
+  
+          <h2 class="modal__title title">Заказать звонок</h2>
+  
+          <form class="modal__form">
+            <div class="modal__date">
+              <label>Имя<br>
+                <input class="modal__input" type="text" name="name">
+              </label>
+        
+              <label>Телефон<br>
+                <input class="modal__input" type="tel" name="phone">
+              </label>
+            </div>
+          
+            <button class="modal__btn" type="submit">Позвонить мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal modal_active">
+      <div class="modal__container">
         <h2 class="modal__title title">Заказать звонок</h2>
 
         <form class="modal__form">
-          <div class="modal__date">
-            <label>Имя<br>
+          <fieldset class="modal__data">
+            <label class="modal__label">Имя
               <input class="modal__input" type="text" name="name">
             </label>
       
-            <label>Телефон<br>
+            <label class="modal__label">Телефон
               <input class="modal__input" type="tel" name="phone">
             </label>
-          </div>
+          </fieldset>
         
           <button class="modal__btn" type="submit">Позвонить мне</button>
+
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+            <svg width="42" height="42" viewbox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)"/>
+              <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)"/>
+            </svg>              
+          </button>
         </form>
       </div>
     </div>
   </div>
 
-  <div class="overlay"></div>
+  <!-- <div class="overlay"></div> -->
 </body>
 </html>
