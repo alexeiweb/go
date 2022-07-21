@@ -59,39 +59,58 @@ ymaps.ready(init);
 
 /* Модальное окно */
 
-const modal = $('.modal');
-const modalBtn = $('.header__btn');
-const modalClose = $('.modal-close');
-const modalContent = $('.modal__content');
-const modalOverlay = $('.overlay');
-const modalTitle = $('.modal__title');
-const modalForm = $('.modal__form');
+const headerBtn = document.querySelector('.header__btn');
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.modal');
 
-modalBtn.click(function() {  
-  modal.toggleClass('modal-active');
-  modalOverlay.addClass('overlay-active');
+headerBtn.addEventListener('click', () => {
+  overlay.classList.add('overlay_active');
+  modal.classList.add('modal_active');
 });
 
-const closeModal = function() {
-  modal.removeClass('modal-active');
-  modalOverlay.removeClass('overlay-active');  
-};
+overlay.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target === overlay || target.closest('.modal__close')) {
+    overlay.classList.remove('overlay_active');
+    modal.classList.remove('modal_active');
+  }  
+});
 
-modalOverlay.click(closeModal);
-modalClose.click(closeModal);
+
+// const modal = $('.modal');
+// const modalBtn = $('.header__btn');
+// const modalClose = $('.modal-close');
+// const modalContent = $('.modal__content');
+// const modalOverlay = $('.overlay');
+
+// modalBtn.click(function() {  
+//   modal.toggleClass('modal-active');
+//   modalOverlay.addClass('overlay-active');
+// });
+
+// const closeModal = function() {
+//   modal.removeClass('modal-active');
+//   modalOverlay.removeClass('overlay-active');  
+// };
+
+// modalOverlay.click(closeModal);
+// modalClose.click(closeModal);
 
 
 /* Закрытие модального окна при клике вне его контентной области */
 
-modal.click(function (event) {    
-    if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
-      $(this).removeClass('modal-active'); // событие вызвал элемент modal
-      modalOverlay.removeClass('overlay-active');
-    }
-});
+// modal.click(function (event) {    
+//     if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
+//       $(this).removeClass('modal-active'); // событие вызвал элемент modal
+//       modalOverlay.removeClass('overlay-active');
+//     }
+// });
 
 
 /* Отправка формы */
+
+const modalTitle = $('.modal__title');
+const modalForm = $('.modal__form');
 
 modalForm.submit(function (event) {
   event.preventDefault();
