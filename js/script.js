@@ -151,11 +151,17 @@ const popup = document.querySelector('.popup');
 const headerNav = document.querySelector('.header__navigation');
 const navItem = document.querySelector('.navigation__item');
 
-burger.addEventListener('click', function() {
+burger.addEventListener('click', () => {
   popup.classList.add('active');
   headerNav.classList.add('active');
 });
 
-navItem.addEventListener('click', function() {
-  popup.classList.remove('active');
+navItem.addEventListener('click', () => {
+  //popup.classList.remove('active');
+  //headerNav.classList.remove('active');
+});
+
+$('.navigation__item a').on('click', function(){
+  $('.header__navigation').removeClass('active');
+  $('.popup').removeClass('active');
 });
