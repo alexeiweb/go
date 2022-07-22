@@ -1,9 +1,7 @@
 .modal {  
   max-width: 600px;
   width: 100%;
-  margin: 30px 0;
-  display: inline-block;
-  vertical-align: middle;
+  margin: auto;
   cursor: default; /* убирает курсор в модальном окне */
   text-align: left;
   white-space: normal;
@@ -91,6 +89,7 @@
 
 .overlay {  
   position: fixed;
+  display: flex;
   inset: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.7);

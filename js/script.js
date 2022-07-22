@@ -50,7 +50,7 @@ ymaps.ready(init);
     });
 
     const marker = new ymaps.Placemark([55.723151, 37.565021], {
-      hintContent: 'Интересное место'
+      hintContent: 'улица Усачёва'
     });
 
       kremMap.geoObjects.add(marker);
@@ -58,6 +58,7 @@ ymaps.ready(init);
 
 
 /* Модальное окно */
+
 
 const headerBtn = document.querySelector('.header__btn');
 const overlay = document.querySelector('.overlay');
@@ -77,34 +78,36 @@ overlay.addEventListener('click', (event) => {
 });
 
 
-// const modal = $('.modal');
-// const modalBtn = $('.header__btn');
-// const modalClose = $('.modal-close');
-// const modalContent = $('.modal__content');
-// const modalOverlay = $('.overlay');
+/*
+const modal = $('.modal');
+const modalBtn = $('.header__btn');
+const modalClose = $('.modal__close');
+const modalContent = $('.modal__content');
+const modalOverlay = $('.overlay');
 
-// modalBtn.click(function() {  
-//   modal.toggleClass('modal-active');
-//   modalOverlay.addClass('overlay-active');
-// });
+modalBtn.click(function() {  
+  modal.toggleClass('modal_active');
+  modalOverlay.addClass('overlay_active');
+});
 
-// const closeModal = function() {
-//   modal.removeClass('modal-active');
-//   modalOverlay.removeClass('overlay-active');  
-// };
+const closeModal = function() {
+  modal.removeClass('modal_active');
+  modalOverlay.removeClass('overlay_active');  
+};
 
-// modalOverlay.click(closeModal);
-// modalClose.click(closeModal);
+modalOverlay.click(closeModal);
+modalClose.click(closeModal);
+*/
 
 
 /* Закрытие модального окна при клике вне его контентной области */
 
-// modal.click(function (event) {    
-//     if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
-//       $(this).removeClass('modal-active'); // событие вызвал элемент modal
-//       modalOverlay.removeClass('overlay-active');
-//     }
-// });
+modal.click(function (event) {    
+    if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
+      $(this).removeClass('modal_active'); // событие вызвал элемент modal
+      modalOverlay.removeClass('overlay_active');
+    }
+});
 
 
 /* Отправка формы */

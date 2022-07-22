@@ -36,12 +36,13 @@
 }
 
 .booking__hall_radio:focus {
-  background-color: hsl(0, 0%, 100%);
   border: 3px solid var(--secondary-color);
 }
 
 .booking__hall_radio:active {
-  background-color: var(--next-color);
+  background-color: var(--main-color);
+  border: 3px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .booking__hall_radio-click {
