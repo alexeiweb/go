@@ -10,6 +10,8 @@ document.addEventListener('click', event => {
 /* Slider */
 
 new Swiper(".swiper", {
+  loop: true,
+
   navigation: {
     nextEl: ".feedback__arrow_right",
     prevEl: ".feedback__arrow_left",
