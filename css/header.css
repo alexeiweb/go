@@ -183,15 +183,15 @@ background-color: var(--main-color);
     gap: 26px;
   }
 
-  .navigation__item:hover {
+  .header__navigation.active .navigation__item:hover {
     width: 138px;
     border: 2px solid var(--main-color);
     border-radius: 6px;
     background-color: transparent;
   }
-
-  .navigation__item:focus,
-  .navigation__item:active {
+  
+  .header__navigation.active .navigation__item:focus,
+  .header__navigation.active .navigation__item:active {
     width: 138px;
     border: 2px solid var(--add-color);
     border-radius: 6px;

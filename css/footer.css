@@ -186,9 +186,9 @@
     gap: 5px;
   }
   
-  .contacts__map {
-    width: 280px;
-    height: 194px;
+  .contacts__map {    
+    width: 280px !important;
+    height: 194px !important;
     /* max-width: 688px; */
     margin-bottom: 63px;
   }
