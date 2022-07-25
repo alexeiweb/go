@@ -167,3 +167,6 @@ $('.navigation__item a').on('click', function(){
   $('.header__navigation').removeClass('active');
   $('.popup').removeClass('active');
 });
+
+/* Календарь */
+
