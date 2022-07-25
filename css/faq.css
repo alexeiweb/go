@@ -68,6 +68,15 @@
   .faq__item:last-child {
     display: none;
   }
+
+  .faq__btn_purple {
+    background: url("../img/open-purple.svg") no-repeat;
+    background-position-x: right;
+  }
+  
+.faq__btn_purple:hover {
+  background-image: url("../img/open-purple-hover.svg");
+}
 }
 
 @media (max-width: 768px) {
@@ -76,9 +85,29 @@
   }
 }
 
-@media (max-width: 320px) {
-  .faq__item {
+@media (max-width: 768px) {
+  .faq__item_title {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .faq__item {    
+    padding: 7px 10px;
+  }
+
+  .faq__item:nth-child(2n) .ui-accordion-header-active {
+    background: url("../img/close-purple.svg") no-repeat;
+    background-position-x: right;
+  }
+  
+  .faq__btn,
+  .faq__btn_purple,
+  .faq__item .ui-accordion-header-active,
+  .faq__item:nth-child(2n) .ui-accordion-header-active {
+    background-size: 30px 30px;
+  }
+  
+  .faq__item_text {
+    font-size: 12px;
   }
 }
