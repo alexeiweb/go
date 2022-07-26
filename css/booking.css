@@ -189,16 +189,32 @@ input[type="radio"]:checked + label:after {
   gap: 50px;  
 }
 
+.booking__date_list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .booking__date_item,
 .booking__time_item {
   width: 134px;
   height: 52px;
   border: none;
+  text-align: center;
 }
 
-.booking__date_list {
-  display: flex;
-  justify-content: space-between;
+.booking__date_item::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+  text-align: left;
+  appearance: none;
+	background-image: url('../img/triangle.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 47px 12px;
+  padding: 12px 27px 12px 20px;
+  transition: .3s ease-in-out;  
 }
 
 .booking__date_list input:focus {  
@@ -218,13 +234,6 @@ input[type="radio"]:checked + label:after {
   background-image: url('../img/triangle.svg');
   background-position: -40px center;
 	background-size: 47px 12px; 
-}
-
-.booking__date_item,
-.booking__time_item {
-  width: 134px;
-  height: 52px;
-  border: none;
 }
 
 .booking__number {

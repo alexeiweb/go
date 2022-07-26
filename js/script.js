@@ -142,7 +142,9 @@ $('.booking__form').submit(function (event) {
     url: 'https://jsonplaceholder.typicode.com/posts',
     type: 'POST',
     data: $(this).serialize(),
-  })
+  });
+
+  $('.booking__form')[0].reset(); /* обнулить форму */
 });
 
 
@@ -170,3 +172,17 @@ $('.navigation__item a').on('click', function(){
 
 /* Календарь */
 
+const picker = datepicker('.booking__date_item', {
+  formatter: (input, date, instance) => {
+    const value = date.toLocaleDateString()
+    input.value = value // => '1/1/2099'
+  },
+  startDay: 0,
+  customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+  customMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  minDate: new Date(),
+  maxDate: new Date(2030, 0, 1),
+  position: 'br',  
+});
+
+// picker.calendarContainer.style.setProperty('font-size', '1.5rem');
