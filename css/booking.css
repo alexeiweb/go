@@ -169,6 +169,9 @@ input[type="radio"]:checked + label:after {
     opacity: 1;
 }
 
+
+/* Выбери дату и время */
+
 .booking__date_title {
   display: block;
   text-align: center;
@@ -186,12 +189,13 @@ input[type="radio"]:checked + label:after {
 .booking__date_block {
   display: flex;
   flex-direction: column;
-  gap: 50px;  
 }
 
 .booking__date_list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+  padding-top: 16px;
 }
 
 .booking__date_item,
@@ -218,11 +222,41 @@ input[type="radio"]:checked + label:after {
   transition: .3s ease-in-out;  
 }
 
-.booking__date_list input:focus {  
+.booking__date_data {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-bottom: 14px;
+}
+
+.booking__date_data:last-child {
+  margin-bottom: 0;
+}
+
+.booking__date_label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.booking__date_input {  
+  display: block;
+  width: 280px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #000;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.booking__date_input:focus {  
   border: 3px solid var(--secondary-color);
   outline: none;  
 }
-
+/* 
 ::-webkit-datetime-edit { 
   padding: 12px 20px; 
 }
@@ -235,8 +269,9 @@ input[type="radio"]:checked + label:after {
   background-image: url('../img/triangle.svg');
   background-position: -40px center;
 	background-size: 47px 12px; 
-}
+} */
 
+.booking__date_item:focus,
 .booking__time_item:focus {  
   border: 3px solid var(--secondary-color);
   outline: none;  
@@ -269,35 +304,6 @@ input[type="radio"]:checked + label:after {
   line-height: 20px;
 }
 
-.booking__date_name,
-.booking__date_second-name,
-.booking__date_phone,
-.booking__date_email {
-  height: 53px;
-  position: relative;
-  font-weight: 700;
-  font-size: 14px;
-  transform: translateY(-16px);
-}
-
-.booking__date_name input,
-.booking__date_second-name input,
-.booking__date_phone input,
-.booking__date_email input {
-  padding-left: 20px;
-  font-size: 20px;
-  width: 280px;
-  height: 52px;  
-}
-
-.booking__date_name input:focus,
-.booking__date_second-name input:focus,
-.booking__date_phone input:focus,
-.booking__date_email input:focus {  
-  border: 3px solid var(--secondary-color);
-  outline: none;  
-}
-
 .booking__btn_wrapper {
   margin-left: auto;
 }
@@ -311,8 +317,9 @@ input[type="radio"]:checked + label:after {
   border: 3px solid #fff;
   border-radius: 10px;
   color: var(--main-color);
-  width: 300px;
-  padding: 16px 0;  
+  max-width: 280px;
+  width: 100%;
+  padding: 16px 36px;  
   transition: .3s ease-in-out;
 }
 
@@ -380,19 +387,16 @@ input[type="radio"]:checked + label:after {
     gap: 36px;
   }
 
+  .booking__date_input {
+    width: 250px; 
+  }
+
   .booking__btn {
-    width: 254px;
+    width: 250px;
     font-size: 18px;
     line-height: 24px;
     padding: 13px 45px;
-  }
-  
-  .booking__date_name input,
-  .booking__date_second-name input,
-  .booking__date_phone input,
-  .booking__date_email input {
-    width: 250px; 
-  }
+  }  
 }
 
 @media (max-width: 1023px) {
@@ -431,6 +435,7 @@ input[type="radio"]:checked + label:after {
   .booking__date_block {
     justify-content: space-between;
     align-items: stretch;
+    gap: 14px;
   }
 
   .block-date {    
@@ -439,31 +444,23 @@ input[type="radio"]:checked + label:after {
   }
 
   .booking__date_list {
-    gap: 14px;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
   }
 
-  .booking__date_name input {
-    width: 280px; 
-  }
-
-  .booking__date_second-name input {
-    width: 280px;
-  }
-
-  .booking__date_phone input {
-    width: 300px;
-  }
-
-  .booking__date_email input {
-    width: 300px;
+  .booking__date_input {
+    width: 300px; 
   }
 
   .booking__btn {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     font-size: 22px;
     padding: 16px 50px;
   }
 }
+
 
 @media (max-width: 768px) {
   .booking {
@@ -526,11 +523,7 @@ input[type="radio"]:checked + label:after {
     width: 280px;
   }
 
-  .booking__date_phone input {
-    width: 280px;
-  }
-
-  .booking__date_email input {
+  .booking__date_input {
     width: 280px;
   }
 
@@ -545,11 +538,9 @@ input[type="radio"]:checked + label:after {
   }
 }
 
+
 @media (max-width: 480px) {
-  .booking__date_name input,
-  .booking__date_second-name input,
-  .booking__date_phone input,
-  .booking__date_email input {
+  .booking__date_input {
     font-size: 14px;
   }
 }

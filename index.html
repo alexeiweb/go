@@ -280,7 +280,7 @@
             </div>
           </fieldset>
 
-          <div class="booking__date">
+          <div class="booking__date" hidden>
             <h3 class="booking__date_title block-title">Выбери дату и время</h3>
   
             <div class="booking__date_wrapper">
@@ -354,9 +354,80 @@
               </div>
             </div>
           </div>
+
+          <div class="booking__date">
+            <h3 class="booking__date_title block-title">Выбери дату и время</h3>
+  
+            <div class="booking__date_wrapper">
+              <div class="booking__date_block block-date">
+                <div class="booking__date_list">
+                  <label>
+                    <input class="booking__date_item" type="text" name="date" placeholder="Дата" required>
+                  </label>
+
+                  <select class="booking__time_item" name="time" required>
+                    <option value="">Время</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                  </select>
+                </div>
+
+                <select class="booking__number" name="number" required>
+                  <option value="">Сколько человек</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+    
+              <div class="booking__date_block">
+                <fieldset class="booking__date_data">
+                  <label class="booking__date_label">Имя
+                    <input class="booking__date_input" type="text" name="name" required>
+                  </label>
+                </fieldset>
+      
+                <fieldset class="booking__date_data">
+                  <label class="booking__date_label">Фамилия
+                    <input class="booking__date_input" type="text" name="second name">
+                  </label>
+                </fieldset>
+              </div>
+    
+              <div class="booking__date_block">
+                <fieldset class="booking__date_data">
+                  <label class="booking__date_label">Телефон
+                    <input class="booking__date_input" type="tel" name="phone">
+                  </label>
+                </fieldset>
+      
+                <fieldset class="booking__date_data">
+                  <label class="booking__date_label">E-mail
+                    <input class="booking__date_input" type="email" name="email">
+                  </label>
+                </fieldset>
+              </div>
+              
+              <div class="booking__btn_wrapper">
+                <button class="booking__btn" type="submit">Забронировать</button>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
-    </section>
+    </section>    
 
     <section class="about" id="about">
       <div class="container about__container">
