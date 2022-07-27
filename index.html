@@ -287,22 +287,37 @@
               <div class="booking__date_block block-date">
                 <div class="booking__date_list">
                   <label>
-                    <input class="booking__date_item" type="text" name="date" placeholder="Дата">
+                    <input class="booking__date_item" type="text" name="date" placeholder="Дата" required>
                   </label>
         
-                  <label>
+                  <!-- <label>
                     <input class="booking__time_item" type="time" name="time">
-                  </label>
+                  </label> -->
+
+                  <select class="booking__time_item" name="time" required>
+                    <option value="">Время</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                  </select>
                 </div>
-      
-                <select class="booking__number" name="number">
+
+                <select class="booking__number" name="number" required>
                   <option value="">Сколько человек</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
                 </select>
               </div>
     

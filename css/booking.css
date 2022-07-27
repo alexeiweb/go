@@ -202,7 +202,8 @@ input[type="radio"]:checked + label:after {
   text-align: center;
 }
 
-.booking__date_item::placeholder {
+.booking__date_item::placeholder,
+.booking__time_item {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -234,6 +235,11 @@ input[type="radio"]:checked + label:after {
   background-image: url('../img/triangle.svg');
   background-position: -40px center;
 	background-size: 47px 12px; 
+}
+
+.booking__time_item:focus {  
+  border: 3px solid var(--secondary-color);
+  outline: none;  
 }
 
 .booking__number {
