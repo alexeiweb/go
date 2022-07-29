@@ -79,7 +79,6 @@ overlay.addEventListener('click', (event) => {
   }  
 });
 
-
 /*
 const modal = $('.modal');
 const modalBtn = $('.header__btn');
